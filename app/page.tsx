@@ -14,6 +14,7 @@ const SECTION_COUNT = 7;
 export default function Home() {
   const containerRef = useRef<HTMLDivElement>(null);
   const isScrolling = useRef(false);
+  const animationFrame = useRef<number | null>(null);
 
   useEffect(() => {
     const container = containerRef.current;
@@ -30,20 +31,45 @@ export default function Home() {
         0,
         Math.min(current + direction, SECTION_COUNT - 1),
       );
-      const target = container.children[next];
-
-      if (!target) return;
+      const start = container.scrollTop;
+      const target = next * container.clientHeight;
+      const duration = 650;
+      let startTime: number | null = null;
 
       isScrolling.current = true;
-      target.scrollIntoView({ behavior: "smooth", block: "start" });
+      container.style.scrollSnapType = "none";
 
-      window.setTimeout(() => {
-        isScrolling.current = false;
-      }, 700);
+      const animate = (time: number) => {
+        startTime ??= time;
+        const progress = Math.min((time - startTime) / duration, 1);
+        const easedProgress =
+          progress < 0.5
+            ? 4 * progress ** 3
+            : 1 - Math.pow(-2 * progress + 2, 3) / 2;
+
+        container.scrollTop = start + (target - start) * easedProgress;
+
+        if (progress < 1) {
+          animationFrame.current = window.requestAnimationFrame(animate);
+        } else {
+          container.scrollTop = target;
+          container.style.scrollSnapType = "";
+          animationFrame.current = null;
+          isScrolling.current = false;
+        }
+      };
+
+      animationFrame.current = window.requestAnimationFrame(animate);
     };
 
     container.addEventListener("wheel", handleWheel, { passive: false });
-    return () => container.removeEventListener("wheel", handleWheel);
+    return () => {
+      container.removeEventListener("wheel", handleWheel);
+      if (animationFrame.current !== null) {
+        window.cancelAnimationFrame(animationFrame.current);
+      }
+      container.style.scrollSnapType = "";
+    };
   }, []);
 
   return (
