@@ -1,6 +1,6 @@
 export default function Value() {
   return (
-    <section className="section section-value">
+    <section className="section section-value scrollable">
       <div className="section-meta" aria-hidden="true">
         <span>08-11</span>
         <span>Technology & Impact</span>

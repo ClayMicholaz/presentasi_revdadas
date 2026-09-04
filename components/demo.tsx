@@ -1,6 +1,6 @@
 export default function Demo() {
   return (
-    <section className="section section-demo">
+    <section className="section section-demo scrollable">
       <div className="section-meta" aria-hidden="true">
         <span>06-07</span>
         <span>Prototype & Technology</span>
