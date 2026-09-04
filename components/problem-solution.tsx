@@ -3,7 +3,7 @@ export default function ProblemSolution() {
     <section className="section section-problem">
       <div className="section-meta" aria-hidden="true">
         <span>01-02</span>
-        <span>Problem &amp; Validation</span>
+        <span>Problem & Validation</span>
       </div>
       
       <div className="slide-content">
@@ -14,7 +14,9 @@ export default function ProblemSolution() {
           <div className="split-layout">
             <div className="left">
               <div className="big-number">7.006</div>
-              <p className="label">Kelemahan SPI — BPK RI IHPS I/2023</p>
+              <p className="label" style={{ fontSize: '0.875rem', color: '#6b7280' }}>
+                Kelemahan SPI — BPK RI IHPS I/2023
+              </p>
             </div>
             
             <div className="right timeline">
@@ -28,12 +30,12 @@ export default function ProblemSolution() {
               </div>
               <div className="timeline-item failed">
                 <strong>Hari 30+</strong>
-                <p>Anomali terdeteksi... tapi anggaran sudah terkunci ❌</p>
+                <p>Anomali terdeteksi... tapi anggaran sudah terkunci</p>
               </div>
             </div>
           </div>
           
-          <ul className="body-points">
+          <ul className="body-points" style={{ marginTop: '2rem', maxWidth: '600px', marginLeft: 'auto', marginRight: 'auto' }}>
             <li>705 entitas pemerintah teraudit</li>
             <li>Rekonsiliasi manual: <strong>20–30 hari/siklus</strong></li>
             <li>Ketika anomali ditemukan, siklus anggaran sudah terkunci</li>
@@ -41,40 +43,40 @@ export default function ProblemSolution() {
           </ul>
           
           <div className="evidence-callout">
-            🔴 Sumber: BPK RI IHPS I/2023 | UU No.1/2022 (HKPD)
+            Sumber: BPK RI IHPS I/2023 | UU No.1/2022 (HKPD)
           </div>
         </div>
         
-        <div className="slide-2">
+        <div className="slide-2" style={{ marginTop: '4rem' }}>
           <h1>Data Ada. Insight Tidak.</h1>
           <h2>Bapenda terjebak analysis paralysis — data berlimpah, tanpa instrumen validasi.</h2>
           
           <div className="three-column">
             <div className="column">
               <h3>WHO</h3>
-              <p>👤 <strong>Kepala Bidang Pengawasan Bapenda Provinsi</strong></p>
+              <p><strong>Kepala Bidang Pengawasan Bapenda Provinsi</strong></p>
               <p>Menerima ribuan baris data setoran self-assessment setiap bulan</p>
             </div>
             
             <div className="column">
               <h3>ROOT CAUSE</h3>
-              <p>⚠️ <strong>Self-assessment tax = Asimetri informasi</strong></p>
+              <p><strong>Self-assessment tax = Asimetri informasi</strong></p>
               <p>Bapenda tidak punya instrumen validasi otomatis untuk cocokkan nilai setoran vs transaksi riil</p>
             </div>
             
             <div className="column">
               <h3>CONSEQUENCE</h3>
-              <p>📉 <strong>Analysis Paralysis</strong></p>
+              <p><strong>Analysis Paralysis</strong></p>
               <p>Target APBD ditetapkan berbasis asumsi statis → defisit pembiayaan infrastruktur, kesehatan, pendidikan</p>
             </div>
           </div>
           
           <div className="bottom-strip">
             <div className="signal-item">
-              <strong>🏛️ Kesiapan institusional:</strong> 73,6% pemda sudah Digital (ETPD Sem.I/2023)
+              <strong>Kesiapan institusional:</strong> 73,6% pemda sudah Digital (ETPD Sem.I/2023)
             </div>
             <div className="signal-item">
-              <strong>📜 Regulatory push:</strong> UU HKPD 2022 amanatkan optimasi PAD
+              <strong>Regulatory push:</strong> UU HKPD 2022 amanatkan optimasi PAD
             </div>
           </div>
         </div>

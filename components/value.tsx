@@ -3,227 +3,89 @@ export default function Value() {
     <section className="section section-value">
       <div className="section-meta" aria-hidden="true">
         <span>08-11</span>
-        <span>Technology &amp; Impact</span>
+        <span>Technology & Impact</span>
       </div>
       
       <div className="slide-content">
-        <div className="slide-8">
-          <h1>Pipeline AI: Dari CSV ke Insight</h1>
-          <h2>Dua masalah data kritis diselesaikan sebelum model AI dijalankan.</h2>
-          
-          <div className="pipeline-diagram">
-            <div className="pipeline-step">📁 CSV Mentah DJPK (1.2MB, 542 daerah)</div>
-            <div className="arrow">↓</div>
-            <div className="pipeline-step">🔧 DataLoader</div>
-            <div className="arrow">↓</div>
-            <div className="pipeline-step alert">🚫 De-duplikasi — &gt;1.000 baris ganda dihapus</div>
-            <div className="arrow">↓</div>
-            <div className="pipeline-step alert">📉 Decumulation Engine — kumulatif YTD → bulanan diskret<br/><small>[Mengeliminasi lonjakan semu hingga 2.146%]</small></div>
-            <div className="arrow">↓</div>
-            <div className="pipeline-step">⚙️ Feature Engineering — 4 fitur per seri</div>
-            <div className="arrow">↓</div>
-            <div className="pipeline-step dual">
-              <strong>DUA MODEL PARALEL</strong>
-              <div className="model-box">
-                <div>🔴 Isolation Forest<br/><small>(Anomaly Detection)</small></div>
-                <div>📈 Ensemble Prophet<br/><small>(Forecasting)</small></div>
-              </div>
-            </div>
-            <div className="arrow">↓</div>
-            <div className="pipeline-step">📦 Precompute → 110 Skenario → 7 JSON Statis</div>
-            <div className="arrow">↓</div>
-            <div className="pipeline-step">🌐 Next.js Dashboard (&lt;100ms)</div>
-            <div className="arrow">↓</div>
-            <div className="pipeline-step">📄 Export PDF Eksekutif</div>
-          </div>
-          
-          <div className="isolation-forest-highlight">
-            <h3>Isolation Forest:</h3>
-            <p><strong>Input:</strong> Revenue_Norm, MoM_Change, Ratio_to_MA, Seasonality_Deviation</p>
-            <p><strong>Output:</strong> Flag anomali + Severity (Tinggi/Sedang/Rendah) + Alasan Bahasa Indonesia</p>
-          </div>
-          
-          <div className="key-callout">
-            <p>⚡ Seluruh komputasi AI berjalan saat <em>precompute</em> — bukan saat user request.</p>
-          </div>
-        </div>
+        <h1>Pipeline AI & Impact Tervalidasi</h1>
+        <h2>Dari CSV mentah ke insight audit — dengan data science yang ter-validasi.</h2>
         
-        <div className="slide-9">
-          <h1>Arsitektur Serverless: Zero Backend</h1>
-          <h2>Tidak ada server backend yang harus jalan 24/7 — loading instan, biaya nol.</h2>
-          
-          <div className="architecture-diagram">
-            <div className="layer">
-              <h3>Layer 1 — PRECOMPUTE (Python, Lokal)</h3>
-              <ul>
-                <li>├── data_loader.py (Dedup + Decumulate)</li>
-                <li>├── forecasting.py (Ensemble Prophet)</li>
-                <li>├── anomaly_detection.py (Isolation Forest)</li>
-                <li>├── business.py (Sektor Scoring)</li>
-                <li>└── policy.py (Rule-based Recommendations)</li>
-              </ul>
-              <p className="output">↓ generate<br/>7 JSON Static Files (110 skenario)</p>
-            </div>
-            
-            <div className="layer">
-              <h3>Layer 2 — CDN (Vercel)</h3>
-              <p>└── Static hosting — global edge network</p>
-              <p className="output">↓ serve</p>
-            </div>
-            
-            <div className="layer">
-              <h3>Layer 3 — CLIENT (Browser)</h3>
-              <p>└── Next.js 16 + React 19 — 9 komponen interaktif</p>
-            </div>
+        <div className="two-column" style={{ marginTop: '2rem' }}>
+          <div>
+            <h3>Pipeline AI</h3>
+            <p style={{ fontSize: '0.9rem', lineHeight: '1.8' }}>
+              <strong>1. Data Cleaning</strong><br/>
+              • De-duplikasi: &gt;1.000 baris ganda dihapus<br/>
+              • Decumulation: Eliminasi lonjakan semu hingga 2.146%<br/><br/>
+              
+              <strong>2. Feature Engineering</strong><br/>
+              • Revenue_Norm, MoM_Change<br/>
+              • Ratio_to_MA, Seasonality_Deviation<br/><br/>
+              
+              <strong>3. Dual AI Models</strong><br/>
+              • Isolation Forest (Anomaly Detection)<br/>
+              • Ensemble Prophet (Forecasting)<br/><br/>
+              
+              <strong>4. Precompute Architecture</strong><br/>
+              • 110 skenario → 7 JSON statis<br/>
+              • Loading: &lt;100ms (vs 15-30 detik sebelumnya)
+            </p>
           </div>
           
-          <div className="tech-stack">
-            <span className="tech-pill">Python</span>
-            <span className="tech-pill">scikit-learn</span>
-            <span className="tech-pill">Prophet</span>
-            <span className="tech-pill">pandas</span>
-            <span className="tech-pill">Next.js 16</span>
-            <span className="tech-pill">React 19</span>
-            <span className="tech-pill">TypeScript</span>
-            <span className="tech-pill">Leaflet</span>
-            <span className="tech-pill">Vercel</span>
-          </div>
-          
-          <div className="key-metric">
-            <p>⚡ Loading: <strong>&lt;100ms</strong> | Sebelumnya (Streamlit): <strong>15–30 detik</strong></p>
-          </div>
-          
-          <div className="security-note">
-            <p>🔒 Arsitektur client-side: data tidak transit ke server eksternal — krusial untuk konteks pemerintah</p>
-          </div>
-        </div>
-        
-        <div className="slide-10">
-          <h1>Yang Sudah Diuji, Bukan yang Diklaim</h1>
-          <h2>110 skenario tervalidasi. Backtest holdout 6 bulan. &gt;1.000 duplikat dihapus.</h2>
-          
-          <div className="metrics-table">
-            <table>
-              <thead>
-                <tr>
-                  <th>Komponen</th>
-                  <th>Metrik</th>
-                  <th>Hasil</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><strong>Anomaly Detection</strong></td>
-                  <td>Total anomali terdeteksi (8 provinsi)</td>
-                  <td><strong>[X] records</strong></td>
-                </tr>
-                <tr>
-                  <td>Isolation Forest</td>
-                  <td>Severity Tinggi / Sedang / Rendah</td>
-                  <td><strong>[X%] / [X%] / [X%]</strong></td>
-                </tr>
-                <tr>
-                  <td><strong>Forecasting</strong></td>
-                  <td>WAPE rata-rata (holdout 6 bulan)</td>
-                  <td><strong>[XX]%</strong></td>
-                </tr>
-                <tr>
-                  <td>Ensemble Prophet</td>
-                  <td>sMAPE rata-rata</td>
-                  <td><strong>[XX]%</strong></td>
-                </tr>
-                <tr>
-                  <td><strong>Decumulation Engine</strong></td>
-                  <td>False spike dieliminasi</td>
-                  <td><strong>hingga 2.146%</strong></td>
-                </tr>
-                <tr>
-                  <td><strong>Data Pipeline</strong></td>
-                  <td>Duplikat dihapus</td>
-                  <td><strong>&gt;1.000 baris</strong></td>
-                </tr>
-                <tr>
-                  <td><strong>Dashboard</strong></td>
-                  <td>Loading time</td>
-                  <td><strong>&lt;100ms</strong></td>
-                </tr>
-                <tr>
-                  <td><strong>Quality Gate</strong></td>
-                  <td>Skenario lolos validasi</td>
-                  <td><strong>110 dari [total]</strong></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          
-          <div className="callouts">
-            <div className="callout amber">
-              <p>⚠️ <strong>Transparansi:</strong> Beberapa seri forecast masih volatile pada data lumpy. Forecasting diposisikan sebagai fitur pendukung, bukan core value.</p>
-            </div>
-            <div className="callout blue">
-              <p>✅ <strong>Anomaly detection:</strong> anomali yang terdeteksi adalah penyimpangan statistik signifikan — perlu investigasi audit, bukan klaim fraud otomatis.</p>
-            </div>
-          </div>
-        </div>
-        
-        <div className="slide-11">
-          <h1>Impact yang Bisa Dijelaskan</h1>
-          <h2>Dua jenis impact — yang sudah terukur, dan yang masih estimasi dengan asumsi transparan.</h2>
-          
-          <div className="impact-zones">
-            <div className="zone measured">
-              <h3>MEASURED</h3>
-              <table>
-                <thead>
-                  <tr>
-                    <th>KPI</th>
-                    <th>Baseline</th>
-                    <th>Dengan RevDadas</th>
-                    <th>Evidence</th>
-                  </tr>
-                </thead>
+          <div>
+            <h3>Impact Terukur</h3>
+            <div style={{ background: 'white', padding: '1.5rem', borderRadius: '0.5rem', marginBottom: '1rem' }}>
+              <h4 style={{ color: '#059669', marginBottom: '1rem' }}>MEASURED</h4>
+              <table style={{ fontSize: '0.85rem' }}>
                 <tbody>
                   <tr>
-                    <td>Waktu identifikasi anomali</td>
-                    <td>20–30 hari</td>
-                    <td>Instan (&lt;100ms)</td>
-                    <td>Dashboard live</td>
+                    <td><strong>Waktu deteksi anomali</strong></td>
+                    <td>20-30 hari → <strong>&lt;100ms</strong></td>
                   </tr>
                   <tr>
-                    <td>Cakupan data teranalisis</td>
-                    <td>Sampling manual</td>
+                    <td><strong>Cakupan analisis</strong></td>
                     <td>14 komponen × 8 provinsi</td>
-                    <td>110 skenario</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Data quality</strong></td>
+                    <td>110 skenario tervalidasi</td>
                   </tr>
                 </tbody>
               </table>
             </div>
             
-            <div className="zone estimated">
-              <h3>ESTIMATED</h3>
-              <table>
-                <thead>
-                  <tr>
-                    <th>KPI</th>
-                    <th>Basis</th>
-                    <th>Estimasi</th>
-                    <th>Asumsi</th>
-                  </tr>
-                </thead>
+            <div style={{ background: '#fef3c7', padding: '1.5rem', borderRadius: '0.5rem' }}>
+              <h4 style={{ color: '#92400e', marginBottom: '1rem' }}>ESTIMATED</h4>
+              <table style={{ fontSize: '0.85rem' }}>
                 <tbody>
                   <tr>
-                    <td>Potensi Recovery PAD</td>
-                    <td>PAD DJPK 2024 Rp 176,7 T (4 provinsi)</td>
-                    <td>Rp 8,8–17,7 T/tahun</td>
-                    <td>Recovery rate 5–10% konservatif</td>
+                    <td><strong>Potensi Recovery PAD</strong></td>
+                    <td>Rp 8.8-17.7 T/tahun</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Basis</strong></td>
+                    <td>Recovery rate 5-10% konservatif</td>
                   </tr>
                 </tbody>
               </table>
+              <p style={{ fontSize: '0.75rem', marginTop: '1rem', fontStyle: 'italic', color: '#78350f' }}>
+                *Estimasi berbasis PAD DJPK 2024 terverifikasi (DKI + Jabar + Jatim + Banten = Rp 176.68T).
+                Recovery aktual bergantung investigasi audit. Pilot Bapenda adalah langkah validasi berikutnya.
+              </p>
             </div>
           </div>
-          
-          <div className="disclaimer">
-            <p><em>Estimasi recovery rate 5–10% adalah simulasi konservatif berbasis data PAD DJPK 2024 terverifikasi (DKI Rp 50,74T + Jabar Rp 55,26T + Jatim Rp 49,63T + Banten Rp 21,05T = Rp 176,68T). Recovery aktual bergantung kualitas investigasi audit. Pilot Bapenda adalah langkah validasi berikutnya.</em></p>
+        </div>
+        
+        <div style={{ marginTop: '2rem', textAlign: 'center' }}>
+          <h3>Tech Stack</h3>
+          <div className="badges" style={{ marginTop: '1rem' }}>
+            <span className="badge">Python</span>
+            <span className="badge">scikit-learn</span>
+            <span className="badge">Prophet</span>
+            <span className="badge">Next.js 16</span>
+            <span className="badge">React 19</span>
+            <span className="badge">TypeScript</span>
+            <span className="badge">Vercel</span>
           </div>
         </div>
       </div>

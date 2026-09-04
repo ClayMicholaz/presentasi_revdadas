@@ -3,7 +3,7 @@ export default function HowItWorks() {
     <section className="section section-how">
       <div className="section-meta" aria-hidden="true">
         <span>03-04</span>
-        <span>Solution &amp; Differentiation</span>
+        <span>Solution & Differentiation</span>
       </div>
       
       <div className="slide-content">
@@ -13,18 +13,18 @@ export default function HowItWorks() {
           
           <div className="value-prop">
             <p className="value-statement">
-              <strong>&quot;RevDadas membantu Bapenda provinsi mendeteksi anomali pencatatan PAD secara otomatis dan instan — langsung di browser, tanpa instalasi.&quot;</strong>
+              RevDadas membantu Bapenda provinsi mendeteksi anomali pencatatan PAD secara otomatis dan instan — langsung di browser, tanpa instalasi.
             </p>
           </div>
           
           <div className="capability-pills">
             <div className="pill core">
-              <h3>🎯 CORE — Anomaly Detection</h3>
+              <h3>CORE — Anomaly Detection</h3>
               <p>Isolation Forest</p>
               <p>Identifikasi anomali PAD otomatis</p>
             </div>
             <div className="pill support">
-              <h3>📈 PENDUKUNG — Revenue Forecasting</h3>
+              <h3>PENDUKUNG — Revenue Forecasting</h3>
               <p>Ensemble Prophet + Naive-Seasonal</p>
               <p>Proyeksi revenue 6–24 bulan</p>
             </div>
@@ -35,7 +35,7 @@ export default function HowItWorks() {
           </div>
         </div>
         
-        <div className="slide-4">
+        <div className="slide-4" style={{ marginTop: '4rem' }}>
           <h1>Dari Data ke Keputusan Audit: &lt;5 Menit</h1>
           <h2>Satu workflow — dari data ke instruksi audit terfokus — dalam kurang dari 5 menit.</h2>
           
@@ -82,22 +82,22 @@ export default function HowItWorks() {
               </thead>
               <tbody>
                 <tr>
-                  <td>⏱ Waktu deteksi</td>
+                  <td>Waktu deteksi</td>
                   <td>20–30 hari</td>
                   <td>Instan (&lt;100ms)</td>
                 </tr>
                 <tr>
-                  <td>🎯 Jenis audit</td>
+                  <td>Jenis audit</td>
                   <td>Acak, merata</td>
                   <td>Targeted, berbasis risiko</td>
                 </tr>
                 <tr>
-                  <td>📄 Dokumentasi</td>
+                  <td>Dokumentasi</td>
                   <td>Manual spreadsheet</td>
                   <td>PDF otomatis</td>
                 </tr>
                 <tr>
-                  <td>🔍 Cakupan</td>
+                  <td>Cakupan</td>
                   <td>Terbatas, sampling</td>
                   <td>14 komponen APBD</td>
                 </tr>
