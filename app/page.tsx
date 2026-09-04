@@ -21,6 +21,26 @@ export default function Home() {
     if (!container) return;
 
     const handleWheel = (event: WheelEvent) => {
+      // Find the section being scrolled
+      const target = event.target as HTMLElement;
+      const section = target.closest('.section');
+      
+      if (section) {
+        const hasScroll = section.scrollHeight > section.clientHeight;
+        
+        if (hasScroll) {
+          // Check if we're at the boundaries of the section scroll
+          const isAtTop = section.scrollTop === 0;
+          const isAtBottom = Math.abs(section.scrollTop + section.clientHeight - section.scrollHeight) < 1;
+          
+          // Only prevent default and snap to next section if at boundaries
+          if ((event.deltaY < 0 && !isAtTop) || (event.deltaY > 0 && !isAtBottom)) {
+            // Allow normal scrolling within the section
+            return;
+          }
+        }
+      }
+
       event.preventDefault();
 
       if (isScrolling.current || Math.abs(event.deltaY) < 2) return;
@@ -31,6 +51,10 @@ export default function Home() {
         0,
         Math.min(current + direction, SECTION_COUNT - 1),
       );
+      
+      // Don't animate if we're staying on the same section
+      if (next === current) return;
+      
       const start = container.scrollTop;
       const target = next * container.clientHeight;
       const duration = 650;
