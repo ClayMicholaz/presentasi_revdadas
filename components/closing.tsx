@@ -65,39 +65,27 @@ export default function Closing() {
           <h2 style={{ color: '#f5f0df', marginBottom: '2rem', fontSize: 'clamp(1.5rem, 3vw, 2.25rem)' }}>Tim RevDadas</h2>
           
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '1.5rem', marginBottom: '2rem' }}>
-            <div style={{ background: 'rgba(255, 255, 255, 0.95)', padding: '2rem 1.5rem', borderRadius: '0.75rem', textAlign: 'center' }}>
-              <div style={{ width: '80px', height: '80px', borderRadius: '50%', background: '#1e3a8a', color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '2rem', fontWeight: '700', margin: '0 auto 1.5rem' }}>
-                A
-              </div>
+            <div style={{ background: 'white', padding: '1.75rem 1.25rem', borderRadius: '0.5rem', textAlign: 'center', boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }}>
               <h3 style={{ fontSize: '1rem', fontWeight: '600', color: '#1e293b', marginBottom: '0.5rem' }}>Kwik Andreas Jonathan</h3>
-              <p style={{ fontSize: '0.875rem', fontWeight: '600', color: '#d97706', marginBottom: '1rem' }}>Team Lead</p>
+              <p style={{ fontSize: '0.875rem', fontWeight: '600', color: '#475569', marginBottom: '0.75rem' }}>Team Lead</p>
               <p style={{ fontSize: '0.8125rem', color: '#64748b', lineHeight: '1.5' }}>Arsitektur sistem & deployment</p>
             </div>
             
-            <div style={{ background: 'rgba(255, 255, 255, 0.95)', padding: '2rem 1.5rem', borderRadius: '0.75rem', textAlign: 'center' }}>
-              <div style={{ width: '80px', height: '80px', borderRadius: '50%', background: '#1e3a8a', color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '2rem', fontWeight: '700', margin: '0 auto 1.5rem' }}>
-                G
-              </div>
+            <div style={{ background: 'white', padding: '1.75rem 1.25rem', borderRadius: '0.5rem', textAlign: 'center', boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }}>
               <h3 style={{ fontSize: '1rem', fontWeight: '600', color: '#1e293b', marginBottom: '0.5rem' }}>Gwyneth Eunice Widjaja</h3>
-              <p style={{ fontSize: '0.875rem', fontWeight: '600', color: '#d97706', marginBottom: '1rem' }}>Product/UX Lead</p>
+              <p style={{ fontSize: '0.875rem', fontWeight: '600', color: '#475569', marginBottom: '0.75rem' }}>Product/UX Lead</p>
               <p style={{ fontSize: '0.8125rem', color: '#64748b', lineHeight: '1.5' }}>Data engineering & UX</p>
             </div>
             
-            <div style={{ background: 'rgba(255, 255, 255, 0.95)', padding: '2rem 1.5rem', borderRadius: '0.75rem', textAlign: 'center' }}>
-              <div style={{ width: '80px', height: '80px', borderRadius: '50%', background: '#1e3a8a', color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '2rem', fontWeight: '700', margin: '0 auto 1.5rem' }}>
-                C
-              </div>
+            <div style={{ background: 'white', padding: '1.75rem 1.25rem', borderRadius: '0.5rem', textAlign: 'center', boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }}>
               <h3 style={{ fontSize: '1rem', fontWeight: '600', color: '#1e293b', marginBottom: '0.5rem' }}>Clay Micholaz Fu</h3>
-              <p style={{ fontSize: '0.875rem', fontWeight: '600', color: '#d97706', marginBottom: '1rem' }}>Tech/AI Lead</p>
+              <p style={{ fontSize: '0.875rem', fontWeight: '600', color: '#475569', marginBottom: '0.75rem' }}>Tech/AI Lead</p>
               <p style={{ fontSize: '0.8125rem', color: '#64748b', lineHeight: '1.5' }}>Model & validasi kualitas data</p>
             </div>
             
-            <div style={{ background: 'rgba(255, 255, 255, 0.95)', padding: '2rem 1.5rem', borderRadius: '0.75rem', textAlign: 'center' }}>
-              <div style={{ width: '80px', height: '80px', borderRadius: '50%', background: '#1e3a8a', color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '2rem', fontWeight: '700', margin: '0 auto 1.5rem' }}>
-                M
-              </div>
+            <div style={{ background: 'white', padding: '1.75rem 1.25rem', borderRadius: '0.5rem', textAlign: 'center', boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }}>
               <h3 style={{ fontSize: '1rem', fontWeight: '600', color: '#1e293b', marginBottom: '0.5rem' }}>Moses Chisthoper Adisam</h3>
-              <p style={{ fontSize: '0.875rem', fontWeight: '600', color: '#d97706', marginBottom: '1rem' }}>Business/Domain Lead</p>
+              <p style={{ fontSize: '0.875rem', fontWeight: '600', color: '#475569', marginBottom: '0.75rem' }}>Business/Domain Lead</p>
               <p style={{ fontSize: '0.8125rem', color: '#64748b', lineHeight: '1.5' }}>Data sourcing & kebutuhan Bapenda</p>
             </div>
           </div>
