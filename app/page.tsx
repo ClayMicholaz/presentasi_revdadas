@@ -68,7 +68,7 @@ export default function Home() {
       
       const start = container.scrollTop;
       const targetPosition = next * container.clientHeight;
-      const duration = 650;
+      const duration = 800; // Slower, more consistent transition
       let startTime: number | null = null;
 
       isScrolling.current = true;
@@ -77,10 +77,11 @@ export default function Home() {
       const animate = (time: number) => {
         startTime ??= time;
         const progress = Math.min((time - startTime) / duration, 1);
-        const easedProgress =
-          progress < 0.5
-            ? 4 * progress ** 3
-            : 1 - Math.pow(-2 * progress + 2, 3) / 2;
+        
+        // Smoother easing function for professional slide deck feel
+        const easedProgress = progress < 0.5
+          ? 2 * progress * progress
+          : 1 - Math.pow(-2 * progress + 2, 2) / 2;
 
         container.scrollTop = start + (targetPosition - start) * easedProgress;
 
