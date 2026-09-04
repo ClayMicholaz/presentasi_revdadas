@@ -20,6 +20,17 @@ export default function Home() {
     const container = containerRef.current;
     if (!container) return;
 
+    // Reset scroll position of sections when navigating
+    const resetSectionScroll = () => {
+      const sections = container.querySelectorAll('.section');
+      const currentIndex = Math.round(container.scrollTop / container.clientHeight);
+      sections.forEach((section, index) => {
+        if (index !== currentIndex && section instanceof HTMLElement) {
+          section.scrollTop = 0;
+        }
+      });
+    };
+
     const handleWheel = (event: WheelEvent) => {
       // Find the section being scrolled
       const eventTarget = event.target as HTMLElement;
@@ -29,9 +40,9 @@ export default function Home() {
         const hasScroll = section.scrollHeight > section.clientHeight;
         
         if (hasScroll) {
-          // Check if we're at the boundaries of the section scroll
-          const isAtTop = section.scrollTop === 0;
-          const isAtBottom = Math.abs(section.scrollTop + section.clientHeight - section.scrollHeight) < 1;
+          // Check if we're at the boundaries of the section scroll with tolerance
+          const isAtTop = section.scrollTop <= 1;
+          const isAtBottom = section.scrollTop + section.clientHeight >= section.scrollHeight - 1;
           
           // Only prevent default and snap to next section if at boundaries
           if ((event.deltaY < 0 && !isAtTop) || (event.deltaY > 0 && !isAtBottom)) {
@@ -80,6 +91,7 @@ export default function Home() {
           container.style.scrollSnapType = "";
           animationFrame.current = null;
           isScrolling.current = false;
+          resetSectionScroll();
         }
       };
 

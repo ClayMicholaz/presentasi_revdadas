@@ -81,9 +81,10 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   min-height: 100dvh;
+  max-height: 100dvh;
   overflow-y: auto;
   overflow-x: hidden;
   padding: 2rem;
