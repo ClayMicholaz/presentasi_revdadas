@@ -22,33 +22,21 @@ export default function Home() {
     const container = containerRef.current;
     if (!container) return;
 
-    // Reset scroll position of sections when navigating
-    const resetSectionScroll = () => {
-      const sections = container.querySelectorAll('.section');
-      const currentIndex = Math.round(container.scrollTop / container.clientHeight);
-      sections.forEach((section, index) => {
-        if (index !== currentIndex && section instanceof HTMLElement) {
-          section.scrollTop = 0;
-        }
-      });
-    };
-
     const handleWheel = (event: WheelEvent) => {
       // Find the section being scrolled
       const eventTarget = event.target as HTMLElement;
       const section = eventTarget.closest('.section');
       
-      if (section) {
+      // Check if section has scrollable content
+      if (section && section.classList.contains('scrollable')) {
         const hasScroll = section.scrollHeight > section.clientHeight;
         
         if (hasScroll) {
-          // Check if we're at the boundaries of the section scroll with tolerance
           const isAtTop = section.scrollTop <= 1;
           const isAtBottom = section.scrollTop + section.clientHeight >= section.scrollHeight - 1;
           
-          // Only prevent default and snap to next section if at boundaries
+          // Allow scrolling within the section if not at boundaries
           if ((event.deltaY < 0 && !isAtTop) || (event.deltaY > 0 && !isAtBottom)) {
-            // Allow normal scrolling within the section
             return;
           }
         }
@@ -58,19 +46,30 @@ export default function Home() {
 
       if (isScrolling.current || Math.abs(event.deltaY) < 2) return;
 
-      const current = Math.round(container.scrollTop / container.clientHeight);
+      // Get all sections
+      const sections = Array.from(container.querySelectorAll('.section'));
+      const viewportHeight = container.clientHeight;
+      const scrollTop = container.scrollTop;
+      
+      // Find current section index
+      let currentIndex = 0;
+      sections.forEach((sec, idx) => {
+        const rect = sec.getBoundingClientRect();
+        const containerRect = container.getBoundingClientRect();
+        if (Math.abs(rect.top - containerRect.top) < viewportHeight / 2) {
+          currentIndex = idx;
+        }
+      });
+
       const direction = event.deltaY > 0 ? 1 : -1;
-      const next = Math.max(
-        0,
-        Math.min(current + direction, SECTION_COUNT - 1),
-      );
+      const nextIndex = Math.max(0, Math.min(currentIndex + direction, sections.length - 1));
       
-      // Don't animate if we're staying on the same section
-      if (next === current) return;
+      if (nextIndex === currentIndex) return;
       
-      const start = container.scrollTop;
-      const targetPosition = next * container.clientHeight;
-      const duration = 800; // Slower, more consistent transition
+      const targetSection = sections[nextIndex] as HTMLElement;
+      const targetPosition = targetSection.offsetTop;
+      const start = scrollTop;
+      const duration = 800;
       let startTime: number | null = null;
 
       isScrolling.current = true;
@@ -79,8 +78,6 @@ export default function Home() {
       const animate = (time: number) => {
         startTime ??= time;
         const progress = Math.min((time - startTime) / duration, 1);
-        
-        // Smoother easing function for professional slide deck feel
         const easedProgress = progress < 0.5
           ? 2 * progress * progress
           : 1 - Math.pow(-2 * progress + 2, 2) / 2;
@@ -94,7 +91,6 @@ export default function Home() {
           container.style.scrollSnapType = "";
           animationFrame.current = null;
           isScrolling.current = false;
-          resetSectionScroll();
         }
       };
 
