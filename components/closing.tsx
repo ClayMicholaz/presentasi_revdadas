@@ -61,47 +61,51 @@ export default function Closing() {
         </div>
         
         <div style={{ marginTop: '3rem' }}>
-          <h3 style={{ color: 'white', marginBottom: '1.5rem' }}>Team: Ownership, Bukan Jabatan</h3>
-          <div className="team-grid">
-            <div className="team-card">
-              <h3 style={{ color: 'white' }}>Kwik Andreas Jonathan</h3>
-              <p className="role">Team Lead / Architect</p>
-              <ul style={{ fontSize: '0.875rem', paddingLeft: '1.25rem' }}>
-                <li>Migrasi Streamlit → Next.js 16</li>
-                <li>Sistem precomputed serverless</li>
-                <li>Koordinasi lintas modul</li>
-              </ul>
+          <h3 style={{ marginBottom: '1.5rem', fontSize: '0.875rem', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(245, 240, 223, 0.7)' }}>Team & Ownership</h3>
+          <h2 style={{ color: '#f5f0df', marginBottom: '2rem', fontSize: 'clamp(1.5rem, 3vw, 2.25rem)' }}>Tim RevDadas</h2>
+          
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '1.5rem', marginBottom: '2rem' }}>
+            <div style={{ background: 'rgba(255, 255, 255, 0.95)', padding: '2rem 1.5rem', borderRadius: '0.75rem', textAlign: 'center' }}>
+              <div style={{ width: '80px', height: '80px', borderRadius: '50%', background: '#1e3a8a', color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '2rem', fontWeight: '700', margin: '0 auto 1.5rem' }}>
+                A
+              </div>
+              <h3 style={{ fontSize: '1rem', fontWeight: '600', color: '#1e293b', marginBottom: '0.5rem' }}>Kwik Andreas Jonathan</h3>
+              <p style={{ fontSize: '0.875rem', fontWeight: '600', color: '#d97706', marginBottom: '1rem' }}>Team Lead</p>
+              <p style={{ fontSize: '0.8125rem', color: '#64748b', lineHeight: '1.5' }}>Arsitektur sistem & deployment</p>
             </div>
             
-            <div className="team-card">
-              <h3 style={{ color: 'white' }}>Gwyneth Eunice Widjaja</h3>
-              <p className="role">Product & Data Lead</p>
-              <ul style={{ fontSize: '0.875rem', paddingLeft: '1.25rem' }}>
-                <li>10 iterasi UX dari feedback reviewer</li>
-                <li>Pipeline data DJPK</li>
-                <li>Ensemble Prophet + WAPE/sMAPE</li>
-              </ul>
+            <div style={{ background: 'rgba(255, 255, 255, 0.95)', padding: '2rem 1.5rem', borderRadius: '0.75rem', textAlign: 'center' }}>
+              <div style={{ width: '80px', height: '80px', borderRadius: '50%', background: '#1e3a8a', color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '2rem', fontWeight: '700', margin: '0 auto 1.5rem' }}>
+                G
+              </div>
+              <h3 style={{ fontSize: '1rem', fontWeight: '600', color: '#1e293b', marginBottom: '0.5rem' }}>Gwyneth Eunice Widjaja</h3>
+              <p style={{ fontSize: '0.875rem', fontWeight: '600', color: '#d97706', marginBottom: '1rem' }}>Product/UX Lead</p>
+              <p style={{ fontSize: '0.8125rem', color: '#64748b', lineHeight: '1.5' }}>Data engineering & UX</p>
             </div>
             
-            <div className="team-card">
-              <h3 style={{ color: 'white' }}>Clay Micholaz Fu</h3>
-              <p className="role">AI & Tech Lead</p>
-              <ul style={{ fontSize: '0.875rem', paddingLeft: '1.25rem' }}>
-                <li>Isolation Forest + feature engineering</li>
-                <li>Ditemukan & dibersihkan &gt;1.000 duplikat</li>
-                <li>Validasi konsistensi dataset</li>
-              </ul>
+            <div style={{ background: 'rgba(255, 255, 255, 0.95)', padding: '2rem 1.5rem', borderRadius: '0.75rem', textAlign: 'center' }}>
+              <div style={{ width: '80px', height: '80px', borderRadius: '50%', background: '#1e3a8a', color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '2rem', fontWeight: '700', margin: '0 auto 1.5rem' }}>
+                C
+              </div>
+              <h3 style={{ fontSize: '1rem', fontWeight: '600', color: '#1e293b', marginBottom: '0.5rem' }}>Clay Micholaz Fu</h3>
+              <p style={{ fontSize: '0.875rem', fontWeight: '600', color: '#d97706', marginBottom: '1rem' }}>Tech/AI Lead</p>
+              <p style={{ fontSize: '0.8125rem', color: '#64748b', lineHeight: '1.5' }}>Model & validasi kualitas data</p>
             </div>
             
-            <div className="team-card">
-              <h3 style={{ color: 'white' }}>Moses Chisthoper Adisam</h3>
-              <p className="role">Business & Domain Lead</p>
-              <ul style={{ fontSize: '0.875rem', paddingLeft: '1.25rem' }}>
-                <li>Data sourcing DJPK Kemenkeu</li>
-                <li>Analisis kebutuhan Bapenda</li>
-                <li>Alignment domain pemerintahan</li>
-              </ul>
+            <div style={{ background: 'rgba(255, 255, 255, 0.95)', padding: '2rem 1.5rem', borderRadius: '0.75rem', textAlign: 'center' }}>
+              <div style={{ width: '80px', height: '80px', borderRadius: '50%', background: '#1e3a8a', color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '2rem', fontWeight: '700', margin: '0 auto 1.5rem' }}>
+                M
+              </div>
+              <h3 style={{ fontSize: '1rem', fontWeight: '600', color: '#1e293b', marginBottom: '0.5rem' }}>Moses Chisthoper Adisam</h3>
+              <p style={{ fontSize: '0.875rem', fontWeight: '600', color: '#d97706', marginBottom: '1rem' }}>Business/Domain Lead</p>
+              <p style={{ fontSize: '0.8125rem', color: '#64748b', lineHeight: '1.5' }}>Data sourcing & kebutuhan Bapenda</p>
             </div>
+          </div>
+          
+          <div style={{ background: 'rgba(254, 243, 199, 0.2)', border: '1px solid rgba(254, 243, 199, 0.3)', borderRadius: '0.5rem', padding: '1rem', marginTop: '2rem' }}>
+            <p style={{ fontSize: '0.8125rem', color: '#fef3c7', fontStyle: 'italic', margin: 0 }}>
+              Gap & Mitigasi: legal/compliance procurement pemerintah & business development → pendampingan mentor PIDI, kolaborasi inkubator govtech
+            </p>
           </div>
         </div>
         
