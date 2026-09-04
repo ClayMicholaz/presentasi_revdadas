@@ -2,8 +2,8 @@ export default function Differentiator() {
   return (
     <section className="section section-future">
       <div className="section-meta" aria-hidden="true">
-        <span>05</span>
-        <span>Differentiation</span>
+        <span>7</span>
+        <span>Competitive Advantage</span>
       </div>
       
       <div className="slide-content">

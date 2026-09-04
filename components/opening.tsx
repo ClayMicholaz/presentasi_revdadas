@@ -2,8 +2,8 @@ export default function Opening() {
   return (
     <section className="section section-opening">
       <div className="section-meta" aria-hidden="true">
-        <span>00</span>
-        <span>Hackathon PIDI BI DIGDAYA 2026 | S0175</span>
+        <span>1</span>
+        <span>Hackathon PIDI BI DIGDAYA 2026</span>
       </div>
       
       <div style={{ textAlign: 'center', maxWidth: '900px' }}>

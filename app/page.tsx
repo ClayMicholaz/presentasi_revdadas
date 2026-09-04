@@ -1,15 +1,17 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import Closing from "@/components/closing";
+import Opening from "@/components/opening";
+import Problem1 from "@/components/problem1";
+import Problem2 from "@/components/problem2";
+import Solution from "@/components/solution";
+import Workflow from "@/components/workflow";
 import Demo from "@/components/demo";
 import Differentiator from "@/components/differentiator";
-import HowItWorks from "@/components/how-it-works";
-import Opening from "@/components/opening";
-import ProblemSolution from "@/components/problem-solution";
 import Value from "@/components/value";
+import Closing from "@/components/closing";
 
-const SECTION_COUNT = 7;
+const SECTION_COUNT = 9;
 
 export default function Home() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -116,11 +118,13 @@ export default function Home() {
       aria-label="Presentation outline"
     >
       <Opening />
-      <ProblemSolution />
-      <HowItWorks />
+      <Problem1 />
+      <Problem2 />
+      <Solution />
+      <Workflow />
       <Demo />
-      <Value />
       <Differentiator />
+      <Value />
       <Closing />
     </main>
   );

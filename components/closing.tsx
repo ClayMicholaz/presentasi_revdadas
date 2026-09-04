@@ -2,8 +2,8 @@ export default function Closing() {
   return (
     <section className="section section-closing scrollable">
       <div className="section-meta" aria-hidden="true">
-        <span>12-16</span>
-        <span>Market, Team & Closing</span>
+        <span>9</span>
+        <span>Team & Closing</span>
       </div>
       
       <div className="slide-content">
