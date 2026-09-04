@@ -22,8 +22,8 @@ export default function Home() {
 
     const handleWheel = (event: WheelEvent) => {
       // Find the section being scrolled
-      const target = event.target as HTMLElement;
-      const section = target.closest('.section');
+      const eventTarget = event.target as HTMLElement;
+      const section = eventTarget.closest('.section');
       
       if (section) {
         const hasScroll = section.scrollHeight > section.clientHeight;
@@ -56,7 +56,7 @@ export default function Home() {
       if (next === current) return;
       
       const start = container.scrollTop;
-      const target = next * container.clientHeight;
+      const targetPosition = next * container.clientHeight;
       const duration = 650;
       let startTime: number | null = null;
 
@@ -71,12 +71,12 @@ export default function Home() {
             ? 4 * progress ** 3
             : 1 - Math.pow(-2 * progress + 2, 3) / 2;
 
-        container.scrollTop = start + (target - start) * easedProgress;
+        container.scrollTop = start + (targetPosition - start) * easedProgress;
 
         if (progress < 1) {
           animationFrame.current = window.requestAnimationFrame(animate);
         } else {
-          container.scrollTop = target;
+          container.scrollTop = targetPosition;
           container.style.scrollSnapType = "";
           animationFrame.current = null;
           isScrolling.current = false;
