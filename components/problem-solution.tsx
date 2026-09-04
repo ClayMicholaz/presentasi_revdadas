@@ -49,7 +49,7 @@ export default function ProblemSolution() {
         
         <div className="slide-2" style={{ marginTop: '4rem' }}>
           <h1>Data Ada. Insight Tidak.</h1>
-          <h2>Bapenda terjebak analysis paralysis — data berlimpah, tanpa instrumen validasi.</h2>
+          <h2 style={{ textAlign: 'center' }}>Bapenda terjebak analysis paralysis — data berlimpah, tanpa instrumen validasi.</h2>
           
           <div className="three-column">
             <div className="column">

@@ -21,9 +21,9 @@ export default function Demo() {
             <span className="badge">Next.js 16 + React 19</span>
           </div>
           
-          <div className="components-checklist">
-            <h3>9 Komponen:</h3>
-            <ul>
+          <div className="components-checklist" style={{ marginTop: '2rem' }}>
+            <h3 style={{ textAlign: 'center', marginBottom: '1.5rem', color: '#f6f1e7' }}>9 Komponen:</h3>
+            <ul style={{ maxWidth: '900px', margin: '0 auto' }}>
               <li>KPI Cards (Revenue, Anomali, Revenue Loss, Kemandirian Fiskal)</li>
               <li>Heatmap Geospasial Indonesia (Leaflet)</li>
               <li>Anomaly Detection Table (Isolation Forest + AI Reason)</li>
@@ -36,8 +36,8 @@ export default function Demo() {
             </ul>
           </div>
           
-          <div className="data-coverage">
-            <p>8 Provinsi Tervalidasi · 14 Komponen APBD · Data DJPK 2023–2025 · 110 Skenario Validated</p>
+          <div className="data-coverage" style={{ marginTop: '2rem' }}>
+            <p style={{ color: '#1e293b' }}>8 Provinsi Tervalidasi · 14 Komponen APBD · Data DJPK 2023–2025 · 110 Skenario Validated</p>
           </div>
         </div>
         
@@ -49,10 +49,9 @@ export default function Demo() {
             <p>Menunjukkan: Pilih Provinsi → KPI Cards → Anomali Severity Tinggi → Heatmap → Export PDF</p>
           </div>
           
-          <div className="demo-placeholder">
-            <p style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>[Live Demo / Screen Share]</p>
+          <div style={{ textAlign: 'center', marginTop: '3rem' }}>
             <p className="demo-link">
-              <a href="https://revdadas.vercel.app/" target="_blank" rel="noopener noreferrer" style={{ color: '#60a5fa' }}>
+              <a href="https://revdadas.vercel.app/" target="_blank" rel="noopener noreferrer" style={{ color: '#60a5fa', fontSize: '2rem', fontWeight: '600' }}>
                 revdadas.vercel.app
               </a>
             </p>
