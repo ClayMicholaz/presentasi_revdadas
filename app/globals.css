@@ -39,7 +39,7 @@ body {
   overscroll-behavior-y: contain;
   scroll-snap-type: y mandatory;
   scrollbar-width: thin;
-  scrollbar-color: rgba(0,0,0,0.3) transparent;
+  scrollbar-color: rgba(0, 0, 0, 0.3) transparent;
 }
 
 .scroll-container::-webkit-scrollbar {
@@ -51,12 +51,12 @@ body {
 }
 
 .scroll-container::-webkit-scrollbar-thumb {
-  background: rgba(0,0,0,0.3);
+  background: rgba(0, 0, 0, 0.3);
   border-radius: 4px;
 }
 
 .scroll-container::-webkit-scrollbar-thumb:hover {
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 /* Allow sections to have their own scrollbar if content is too long */
@@ -69,12 +69,12 @@ body {
 }
 
 .section::-webkit-scrollbar-thumb {
-  background: rgba(0,0,0,0.2);
+  background: rgba(0, 0, 0, 0.2);
   border-radius: 3px;
 }
 
 .section::-webkit-scrollbar-thumb:hover {
-  background: rgba(0,0,0,0.4);
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .section {
@@ -83,21 +83,20 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  min-height: 100vh;
-  max-height: 100vh;
-  overflow: hidden;
-  padding: 4.5rem 2rem 3rem 2rem;
+  min-height: 100svh;
+  padding: clamp(5rem, 8vh, 6.5rem) clamp(1rem, 5vw, 4rem)
+    clamp(4rem, 7vh, 5rem);
   scroll-snap-align: start;
   isolation: isolate;
 }
 
 /* Sections with scrollable content */
 .section.scrollable {
+  height: 100svh;
+  max-height: 100svh;
+  overflow-y: auto;
   overflow-y: auto;
   justify-content: flex-start;
-  padding-top: 5rem;
-  padding-bottom: 4rem;
 }
 
 .section::before,
@@ -246,8 +245,8 @@ body {
 .slide-content {
   max-width: 1200px;
   width: 100%;
-  padding: 0 1.5rem;
-  margin-top: 3rem;
+  padding: 0 clamp(0.25rem, 1.5vw, 1.5rem);
+  margin: 1.5rem auto 0;
   overflow-y: visible;
   box-sizing: border-box;
 }
@@ -256,6 +255,41 @@ body {
 .section-opening {
   background: #f3c969;
   color: #17191a;
+}
+
+.opening-content {
+  width: min(100%, 900px);
+  margin: auto;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+.opening-title {
+  margin-bottom: clamp(1rem, 3vw, 2rem) !important;
+  font-size: clamp(3rem, 8vw, 6rem) !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.02em !important;
+}
+
+.section-opening .subheadline {
+  max-width: 34ch;
+  margin: 0 auto clamp(1.5rem, 4vw, 2.5rem);
+  font-size: clamp(1.125rem, 2.5vw, 2rem);
+  line-height: 1.4;
+}
+
+.section-opening .tagline {
+  margin-bottom: clamp(1.5rem, 5vw, 3rem);
+  font-size: clamp(1.125rem, 2vw, 1.75rem);
+  font-weight: 600;
+}
+
+.section-opening .team {
+  max-width: 55ch;
+  margin: 0 auto;
+  font-size: clamp(0.8rem, 1.25vw, 1.125rem);
+  line-height: 1.6;
+  opacity: 0.9;
 }
 
 .section-opening h1 {
@@ -344,7 +378,8 @@ body {
 
 @media (max-width: 640px) {
   .section {
-    padding: 1.25rem;
+    justify-content: flex-start;
+    padding: 4.5rem 1rem 3.5rem;
   }
 
   .section-meta {
@@ -357,8 +392,39 @@ body {
     right: 1.25rem;
     bottom: 1.25rem;
   }
-}
 
+  .section h1 {
+    font-size: clamp(1.75rem, 8vw, 2.5rem);
+  }
+
+  .section h2 {
+    font-size: 1rem;
+  }
+
+  .opening-content {
+    padding: 1rem 0 1.5rem;
+  }
+
+  .opening-title {
+    font-size: clamp(2.75rem, 16vw, 4.25rem) !important;
+    line-height: 1;
+  }
+
+  .section-opening .subheadline {
+    max-width: 27ch;
+    font-size: clamp(1rem, 5vw, 1.3rem);
+    line-height: 1.35;
+  }
+
+  .section-opening .tagline {
+    font-size: clamp(1rem, 5vw, 1.25rem);
+  }
+
+  .section-opening .team {
+    max-width: 28ch;
+    font-size: 0.8rem;
+  }
+}
 
 /* Professional Slide Deck Components */
 .split-layout {
@@ -389,7 +455,7 @@ body {
   background: white;
   padding: 1.25rem;
   border-radius: 0.5rem;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .big-number {
@@ -445,7 +511,7 @@ body {
   padding: 1rem;
   background: white;
   border-radius: 0.5rem;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .workflow {
@@ -499,7 +565,7 @@ body {
   padding: 1.5rem;
   background: white;
   border-radius: 0.75rem;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .pill.core {
@@ -548,7 +614,7 @@ body {
   font-size: 0.875rem;
   font-weight: 600;
   color: #1e40af;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .badge.live {
@@ -619,7 +685,7 @@ body {
   padding: 1.5rem;
   background: white;
   border-radius: 0.5rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .team-grid {
@@ -627,6 +693,14 @@ body {
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   margin: 2rem 0;
+}
+
+.team-grid-inline {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.moat-grid {
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .team-card {
@@ -690,7 +764,7 @@ body {
   text-align: center;
   margin-top: 3rem;
   padding-top: 2rem;
-  border-top: 1px solid rgba(255,255,255,0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
   font-size: 0.875rem;
   opacity: 0.8;
 }
@@ -706,8 +780,15 @@ body {
   .evidence-pills {
     grid-template-columns: 1fr;
   }
-  
+
   .components-checklist ul {
+    grid-template-columns: 1fr;
+  }
+
+  .two-column,
+  .bottom-strip,
+  .team-grid-inline,
+  .moat-grid {
     grid-template-columns: 1fr;
   }
 }
@@ -716,16 +797,56 @@ body {
   .section {
     padding: 1.25rem;
   }
-  
+
   .slide-content {
-    padding: 1rem;
+    padding: 0;
+    margin-top: 1rem;
   }
-  
+
   .workflow {
     flex-direction: column;
   }
-  
+
   .arrow {
     transform: rotate(90deg);
+  }
+
+  .section-meta {
+    font-size: 0.6rem;
+  }
+
+  .split-layout,
+  .three-column,
+  .three-panel,
+  .capability-pills,
+  .moat-points,
+  .team-grid,
+  .evidence-pills {
+    gap: 1rem;
+    margin: 1.25rem 0;
+  }
+
+  .panel,
+  .column,
+  .pill,
+  .evidence-pill {
+    padding: 1rem;
+  }
+
+  .value-statement {
+    padding: 1.25rem;
+  }
+
+  .step-box {
+    min-width: min(12rem, 80vw);
+  }
+
+  .comparison-table {
+    margin-right: -0.25rem;
+    margin-left: -0.25rem;
+  }
+
+  .comparison-table table {
+    min-width: 34rem;
   }
 }
