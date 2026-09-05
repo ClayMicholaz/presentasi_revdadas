@@ -11,8 +11,6 @@ import Differentiator from "@/components/differentiator";
 import Value from "@/components/value";
 import Closing from "@/components/closing";
 
-const SECTION_COUNT = 9;
-
 export default function Home() {
   const containerRef = useRef<HTMLDivElement>(null);
   const isScrolling = useRef(false);
@@ -23,44 +21,27 @@ export default function Home() {
     if (!container) return;
 
     const handleWheel = (event: WheelEvent) => {
-      // Find the section being scrolled
-      const eventTarget = event.target as HTMLElement;
-      const section = eventTarget.closest(".section");
+      const sections = Array.from(container.querySelectorAll(".section"));
+      const viewportHeight = container.clientHeight;
+      const scrollTop = container.scrollTop;
+      const currentIndex = sections.reduce((lastIndex, section, index) => {
+        return (section as HTMLElement).offsetTop <= scrollTop + 1
+          ? index
+          : lastIndex;
+      }, 0);
+      const currentSection = sections[currentIndex] as HTMLElement;
 
-      // Check if section has scrollable content
-      if (section && section.classList.contains("scrollable")) {
-        const hasScroll = section.scrollHeight > section.clientHeight;
-
-        if (hasScroll) {
-          const isAtTop = section.scrollTop <= 1;
-          const isAtBottom =
-            section.scrollTop + section.clientHeight >=
-            section.scrollHeight - 1;
-
-          // Allow scrolling within the section if not at boundaries
-          if (
-            (event.deltaY < 0 && !isAtTop) ||
-            (event.deltaY > 0 && !isAtBottom)
-          ) {
-            return;
-          }
-        }
+      if (isScrolling.current || Math.abs(event.deltaY) < 2) {
+        event.preventDefault();
+        return;
       }
 
-      const viewportHeight = container.clientHeight;
-      const sectionElement = section as HTMLElement | null;
-      if (
-        sectionElement &&
-        !sectionElement.classList.contains("scrollable") &&
-        sectionElement.offsetHeight > viewportHeight
-      ) {
-        const sectionTop = sectionElement.offsetTop;
-        const sectionBottom = sectionTop + sectionElement.offsetHeight;
-        const isAtTop = container.scrollTop <= sectionTop + 1;
+      if (currentSection.classList.contains("scrollable")) {
+        const isAtTop = currentSection.scrollTop <= 1;
         const isAtBottom =
-          container.scrollTop + viewportHeight >= sectionBottom - 1;
+          currentSection.scrollTop + currentSection.clientHeight >=
+          currentSection.scrollHeight - 1;
 
-        // Oversized slides need to scroll naturally before changing slides.
         if (
           (event.deltaY < 0 && !isAtTop) ||
           (event.deltaY > 0 && !isAtBottom)
@@ -68,25 +49,22 @@ export default function Home() {
           container.style.scrollSnapType = "none";
           return;
         }
+      } else {
+        const sectionBottom =
+          currentSection.offsetTop + currentSection.offsetHeight;
+        const isAtTop = scrollTop <= currentSection.offsetTop + 1;
+        const isAtBottom = scrollTop + viewportHeight >= sectionBottom - 1;
+
+        if (
+          currentSection.offsetHeight > viewportHeight &&
+          ((event.deltaY < 0 && !isAtTop) || (event.deltaY > 0 && !isAtBottom))
+        ) {
+          container.style.scrollSnapType = "none";
+          return;
+        }
       }
 
       event.preventDefault();
-
-      if (isScrolling.current || Math.abs(event.deltaY) < 2) return;
-
-      // Get all sections
-      const sections = Array.from(container.querySelectorAll(".section"));
-      const scrollTop = container.scrollTop;
-
-      // Find current section index
-      let currentIndex = 0;
-      sections.forEach((sec, idx) => {
-        const rect = sec.getBoundingClientRect();
-        const containerRect = container.getBoundingClientRect();
-        if (Math.abs(rect.top - containerRect.top) < viewportHeight / 2) {
-          currentIndex = idx;
-        }
-      });
 
       const direction = event.deltaY > 0 ? 1 : -1;
       const nextIndex = Math.max(
