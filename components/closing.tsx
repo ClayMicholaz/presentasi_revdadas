@@ -351,7 +351,7 @@ export default function Closing() {
             Kwik Andreas Jonathan · Gwyneth Eunice Widjaja · Clay Micholaz Fu ·
             Moses Chisthoper Adisam
           </p>
-          <p>Universitas Bunda Mulia | S0175</p>
+          <p>S0175</p>
         </div>
       </div>
 
