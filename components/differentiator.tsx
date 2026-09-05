@@ -6,12 +6,12 @@ export default function Differentiator() {
         <span>Competitive Advantage</span>
       </div>
       
-      <div className="slide-content">
-        <h1>Kenapa Bukan yang Lain?</h1>
-        <h2>Alternatif yang ada tidak dibangun untuk anomaly detection fiskal daerah Indonesia.</h2>
+      <div className="slide-content" style={{ maxWidth: '1100px' }}>
+        <h1 style={{ marginBottom: '0.75rem' }}>Kenapa Bukan yang Lain?</h1>
+        <h2 style={{ marginBottom: '1.25rem' }}>Alternatif yang ada tidak dibangun untuk anomaly detection fiskal daerah Indonesia.</h2>
         
-        <div className="comparison-table">
-          <table>
+        <div className="comparison-table" style={{ marginBottom: '1.5rem' }}>
+          <table style={{ fontSize: '0.875rem' }}>
             <thead>
               <tr>
                 <th>Dimensi</th>
@@ -61,20 +61,20 @@ export default function Differentiator() {
           </table>
         </div>
         
-        <div className="competitive-moat">
-          <h3>Competitive Moat</h3>
-          <div className="moat-points">
-            <div className="moat-item">
-              <strong>Precomputed Architecture</strong>
-              <p>Kompetitor on-demand butuh backend mahal</p>
+        <div style={{ marginTop: '1rem' }}>
+          <h3 style={{ fontSize: '1.125rem', marginBottom: '0.875rem', textAlign: 'center' }}>Competitive Moat</h3>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1rem' }}>
+            <div style={{ background: 'white', padding: '1rem', borderRadius: '0.5rem', boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}>
+              <strong style={{ fontSize: '0.9rem', display: 'block', marginBottom: '0.5rem' }}>Precomputed Architecture</strong>
+              <p style={{ fontSize: '0.8125rem', margin: 0 }}>Kompetitor on-demand butuh backend mahal</p>
             </div>
-            <div className="moat-item">
-              <strong>Data DJPK Resmi</strong>
-              <p>Bukan sintetis, institutional trust tinggi</p>
+            <div style={{ background: 'white', padding: '1rem', borderRadius: '0.5rem', boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}>
+              <strong style={{ fontSize: '0.9rem', display: 'block', marginBottom: '0.5rem' }}>Data DJPK Resmi</strong>
+              <p style={{ fontSize: '0.8125rem', margin: 0 }}>Bukan sintetis, institutional trust tinggi</p>
             </div>
-            <div className="moat-item">
-              <strong>Open Source MIT</strong>
-              <p>Pemerintah bisa audit kode, tidak ada black box</p>
+            <div style={{ background: 'white', padding: '1rem', borderRadius: '0.5rem', boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}>
+              <strong style={{ fontSize: '0.9rem', display: 'block', marginBottom: '0.5rem' }}>Open Source MIT</strong>
+              <p style={{ fontSize: '0.8125rem', margin: 0 }}>Pemerintah bisa audit kode, tidak ada black box</p>
             </div>
           </div>
         </div>

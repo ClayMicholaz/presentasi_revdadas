@@ -193,18 +193,20 @@ body {
 }
 
 .section th {
-  padding: 0.75rem;
+  padding: 0.625rem 0.5rem;
   background: #f7fafc;
   border: 1px solid #e2e8f0;
   font-weight: 600;
   color: #2d3748;
   text-align: left;
+  font-size: 0.875rem;
 }
 
 .section td {
-  padding: 0.75rem;
+  padding: 0.625rem 0.5rem;
   border: 1px solid #e2e8f0;
   color: #4a5568;
+  font-size: 0.875rem;
 }
 
 .section .highlight {
