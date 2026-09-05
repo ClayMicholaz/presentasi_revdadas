@@ -11,8 +11,6 @@ import Differentiator from "@/components/differentiator";
 import Value from "@/components/value";
 import Closing from "@/components/closing";
 
-const SECTION_COUNT = 9;
-
 export default function Home() {
   const containerRef = useRef<HTMLDivElement>(null);
   const isScrolling = useRef(false);
@@ -23,44 +21,59 @@ export default function Home() {
     if (!container) return;
 
     const handleWheel = (event: WheelEvent) => {
-      const eventTarget = event.target as HTMLElement;
-      const section = eventTarget.closest('.section');
-      
-      if (section && section.classList.contains('scrollable')) {
-        const hasScroll = section.scrollHeight > section.clientHeight;
-        
-        if (hasScroll) {
-          const isAtTop = section.scrollTop <= 1;
-          const isAtBottom = section.scrollTop + section.clientHeight >= section.scrollHeight - 1;
-          
-          if ((event.deltaY < 0 && !isAtTop) || (event.deltaY > 0 && !isAtBottom)) {
-            return;
-          }
+      const sections = Array.from(container.querySelectorAll(".section"));
+      const viewportHeight = container.clientHeight;
+      const scrollTop = container.scrollTop;
+      const currentIndex = sections.reduce((lastIndex, section, index) => {
+        return (section as HTMLElement).offsetTop <= scrollTop + 1
+          ? index
+          : lastIndex;
+      }, 0);
+      const currentSection = sections[currentIndex] as HTMLElement;
+
+      if (isScrolling.current || Math.abs(event.deltaY) < 2) {
+        event.preventDefault();
+        return;
+      }
+
+      if (currentSection.classList.contains("scrollable")) {
+        const isAtTop = currentSection.scrollTop <= 1;
+        const isAtBottom =
+          currentSection.scrollTop + currentSection.clientHeight >=
+          currentSection.scrollHeight - 1;
+
+        if (
+          (event.deltaY < 0 && !isAtTop) ||
+          (event.deltaY > 0 && !isAtBottom)
+        ) {
+          container.style.scrollSnapType = "none";
+          return;
+        }
+      } else {
+        const sectionBottom =
+          currentSection.offsetTop + currentSection.offsetHeight;
+        const isAtTop = scrollTop <= currentSection.offsetTop + 1;
+        const isAtBottom = scrollTop + viewportHeight >= sectionBottom - 1;
+
+        if (
+          currentSection.offsetHeight > viewportHeight &&
+          ((event.deltaY < 0 && !isAtTop) || (event.deltaY > 0 && !isAtBottom))
+        ) {
+          container.style.scrollSnapType = "none";
+          return;
         }
       }
 
       event.preventDefault();
 
-      if (isScrolling.current || Math.abs(event.deltaY) < 2) return;
-
-      const sections = Array.from(container.querySelectorAll('.section'));
-      const viewportHeight = container.clientHeight;
-      const scrollTop = container.scrollTop;
-      
-      let currentIndex = 0;
-      sections.forEach((sec, idx) => {
-        const rect = sec.getBoundingClientRect();
-        const containerRect = container.getBoundingClientRect();
-        if (Math.abs(rect.top - containerRect.top) < viewportHeight / 2) {
-          currentIndex = idx;
-        }
-      });
-
       const direction = event.deltaY > 0 ? 1 : -1;
-      const nextIndex = Math.max(0, Math.min(currentIndex + direction, sections.length - 1));
-      
+      const nextIndex = Math.max(
+        0,
+        Math.min(currentIndex + direction, sections.length - 1),
+      );
+
       if (nextIndex === currentIndex) return;
-      
+
       const targetSection = sections[nextIndex] as HTMLElement;
       const targetPosition = targetSection.offsetTop;
       const start = scrollTop;
@@ -73,9 +86,10 @@ export default function Home() {
       const animate = (time: number) => {
         startTime ??= time;
         const progress = Math.min((time - startTime) / duration, 1);
-        const easedProgress = progress < 0.5
-          ? 2 * progress * progress
-          : 1 - Math.pow(-2 * progress + 2, 2) / 2;
+        const easedProgress =
+          progress < 0.5
+            ? 2 * progress * progress
+            : 1 - Math.pow(-2 * progress + 2, 2) / 2;
 
         container.scrollTop = start + (targetPosition - start) * easedProgress;
 
