@@ -83,18 +83,16 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100svh;
+  height: 100svh;
+  max-height: 100svh;
+  overflow: hidden;
   padding: clamp(5rem, 8vh, 6.5rem) clamp(1rem, 5vw, 4rem)
     clamp(4rem, 7vh, 5rem);
   scroll-snap-align: start;
   isolation: isolate;
 }
 
-/* Sections with scrollable content */
 .section.scrollable {
-  height: 100svh;
-  max-height: 100svh;
-  overflow-y: auto;
   overflow-y: auto;
   justify-content: flex-start;
 }

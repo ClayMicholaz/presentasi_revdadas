@@ -21,20 +21,29 @@ export default function Home() {
     if (!container) return;
 
     const handleWheel = (event: WheelEvent) => {
-      const sections = Array.from(container.querySelectorAll(".section"));
-      const viewportHeight = container.clientHeight;
-      const scrollTop = container.scrollTop;
-      const currentIndex = sections.reduce((lastIndex, section, index) => {
-        return (section as HTMLElement).offsetTop <= scrollTop + 1
-          ? index
-          : lastIndex;
-      }, 0);
-      const currentSection = sections[currentIndex] as HTMLElement;
-
       if (isScrolling.current || Math.abs(event.deltaY) < 2) {
         event.preventDefault();
         return;
       }
+
+      const sections = Array.from(container.querySelectorAll(".section"));
+      const scrollTop = container.scrollTop;
+      const viewportHeight = container.clientHeight;
+      
+      let currentIndex = 0;
+      for (let i = 0; i < sections.length; i++) {
+        const section = sections[i] as HTMLElement;
+        const sectionTop = section.offsetTop;
+        const sectionMiddle = sectionTop + section.offsetHeight / 2;
+        const viewportMiddle = scrollTop + viewportHeight / 2;
+        
+        if (viewportMiddle >= sectionTop && viewportMiddle < sectionTop + section.offsetHeight) {
+          currentIndex = i;
+          break;
+        }
+      }
+      
+      const currentSection = sections[currentIndex] as HTMLElement;
 
       if (currentSection.classList.contains("scrollable")) {
         const isAtTop = currentSection.scrollTop <= 1;
@@ -46,20 +55,6 @@ export default function Home() {
           (event.deltaY < 0 && !isAtTop) ||
           (event.deltaY > 0 && !isAtBottom)
         ) {
-          container.style.scrollSnapType = "none";
-          return;
-        }
-      } else {
-        const sectionBottom =
-          currentSection.offsetTop + currentSection.offsetHeight;
-        const isAtTop = scrollTop <= currentSection.offsetTop + 1;
-        const isAtBottom = scrollTop + viewportHeight >= sectionBottom - 1;
-
-        if (
-          currentSection.offsetHeight > viewportHeight &&
-          ((event.deltaY < 0 && !isAtTop) || (event.deltaY > 0 && !isAtBottom))
-        ) {
-          container.style.scrollSnapType = "none";
           return;
         }
       }
