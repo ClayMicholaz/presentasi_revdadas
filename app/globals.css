@@ -59,7 +59,6 @@ body {
   background: rgba(0,0,0,0.5);
 }
 
-/* Allow sections to have their own scrollbar if content is too long */
 .section::-webkit-scrollbar {
   width: 6px;
 }
@@ -92,7 +91,6 @@ body {
   isolation: isolate;
 }
 
-/* Sections with scrollable content */
 .section.scrollable {
   overflow-y: auto;
   justify-content: flex-start;
@@ -252,7 +250,6 @@ body {
   box-sizing: border-box;
 }
 
-/* Professional color scheme - SOLID BACKGROUNDS ONLY */
 .section-opening {
   background: #f3c969;
   color: #17191a;
@@ -359,8 +356,6 @@ body {
   }
 }
 
-
-/* Professional Slide Deck Components */
 .split-layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -695,7 +690,6 @@ body {
   opacity: 0.8;
 }
 
-/* Responsive adjustments */
 @media (max-width: 1024px) {
   .split-layout,
   .three-column,

@@ -23,11 +23,9 @@ export default function Home() {
     if (!container) return;
 
     const handleWheel = (event: WheelEvent) => {
-      // Find the section being scrolled
       const eventTarget = event.target as HTMLElement;
       const section = eventTarget.closest('.section');
       
-      // Check if section has scrollable content
       if (section && section.classList.contains('scrollable')) {
         const hasScroll = section.scrollHeight > section.clientHeight;
         
@@ -35,7 +33,6 @@ export default function Home() {
           const isAtTop = section.scrollTop <= 1;
           const isAtBottom = section.scrollTop + section.clientHeight >= section.scrollHeight - 1;
           
-          // Allow scrolling within the section if not at boundaries
           if ((event.deltaY < 0 && !isAtTop) || (event.deltaY > 0 && !isAtBottom)) {
             return;
           }
@@ -46,12 +43,10 @@ export default function Home() {
 
       if (isScrolling.current || Math.abs(event.deltaY) < 2) return;
 
-      // Get all sections
       const sections = Array.from(container.querySelectorAll('.section'));
       const viewportHeight = container.clientHeight;
       const scrollTop = container.scrollTop;
       
-      // Find current section index
       let currentIndex = 0;
       sections.forEach((sec, idx) => {
         const rect = sec.getBoundingClientRect();
