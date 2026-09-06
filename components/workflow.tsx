@@ -45,7 +45,7 @@ export default function Workflow() {
               <tr>
                 <td>Waktu deteksi</td>
                 <td>20–30 hari</td>
-                <td>Instan (&lt;100ms)</td>
+                <td>Instan (&lt;2 detik)</td>
               </tr>
               <tr>
                 <td>Jenis audit</td>

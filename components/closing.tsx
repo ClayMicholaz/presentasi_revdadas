@@ -33,7 +33,7 @@ export default function Closing() {
               >
                 revdadas.vercel.app
               </a>{" "}
-              · &lt;100ms · 9 komponen fungsional
+              · &lt;2 detik · 9 komponen fungsional
             </p>
           </div>
           <div className="evidence-pill">

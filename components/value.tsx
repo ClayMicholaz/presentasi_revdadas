@@ -28,7 +28,7 @@ export default function Value() {
               
               <strong>4. Precompute Architecture</strong><br/>
               • 110 skenario → 7 JSON statis<br/>
-              • Loading: &lt;100ms (vs 15-30 detik sebelumnya)
+              • Loading: &lt;2 detik (vs 15-30 detik sebelumnya)
             </p>
           </div>
           
@@ -40,7 +40,7 @@ export default function Value() {
                 <tbody>
                   <tr>
                     <td><strong>Waktu deteksi anomali</strong></td>
-                    <td>20-30 hari → <strong>&lt;100ms</strong></td>
+                    <td>20-30 hari → <strong>&lt;2 detik</strong></td>
                   </tr>
                   <tr>
                     <td><strong>Cakupan analisis</strong></td>
