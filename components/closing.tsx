@@ -179,16 +179,6 @@ export default function Closing() {
               >
                 Arsitektur sistem & deployment
               </p>
-              <p
-                style={{
-                  fontSize: "0.75rem",
-                  color: "#10b981",
-                  marginTop: "0.5rem",
-                  fontWeight: "600",
-                }}
-              >
-                Arsitektur serverless live
-              </p>
             </div>
 
             <div
@@ -228,16 +218,6 @@ export default function Closing() {
                 }}
               >
                 Data engineering & UX
-              </p>
-              <p
-                style={{
-                  fontSize: "0.75rem",
-                  color: "#10b981",
-                  marginTop: "0.5rem",
-                  fontWeight: "600",
-                }}
-              >
-                10 iterasi UX improvement
               </p>
             </div>
 
@@ -279,16 +259,6 @@ export default function Closing() {
               >
                 Model & validasi kualitas data
               </p>
-              <p
-                style={{
-                  fontSize: "0.75rem",
-                  color: "#10b981",
-                  marginTop: "0.5rem",
-                  fontWeight: "600",
-                }}
-              >
-                Isolation Forest + 110 skenario
-              </p>
             </div>
 
             <div
@@ -328,16 +298,6 @@ export default function Closing() {
                 }}
               >
                 Data sourcing & kebutuhan Bapenda
-              </p>
-              <p
-                style={{
-                  fontSize: "0.75rem",
-                  color: "#10b981",
-                  marginTop: "0.5rem",
-                  fontWeight: "600",
-                }}
-              >
-                8 provinsi tervalidasi
               </p>
             </div>
           </div>
