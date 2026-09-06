@@ -72,6 +72,9 @@ export default function Value() {
                 *Estimasi berbasis PAD DJPK 2024 terverifikasi (DKI + Jabar + Jatim + Banten = Rp 176.68T).
                 Recovery aktual bergantung investigasi audit. Pilot Bapenda adalah langkah validasi berikutnya.
               </p>
+              <p style={{ fontSize: '0.75rem', marginTop: '0.75rem', fontWeight: '600', color: '#92400e' }}>
+                Human Oversight: RevDadas adalah decision support tool — anomali memerlukan konfirmasi audit manual aparatur Bapenda.
+              </p>
             </div>
           </div>
         </div>

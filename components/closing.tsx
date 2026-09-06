@@ -94,6 +94,9 @@ export default function Closing() {
               <p style={{ fontSize: "0.875rem" }}>Pilot Gratis MoU</p>
               <p style={{ fontSize: "0.875rem" }}>DKI / Jabar target</p>
               <p style={{ fontSize: "0.875rem" }}>Zero cost for pemda</p>
+              <p style={{ fontSize: "0.75rem", marginTop: "0.5rem", fontStyle: "italic", opacity: "0.9" }}>
+                Next validation: demo ke Bapenda melalui jaringan UBM & PIDI
+              </p>
             </div>
             <div
               style={{
@@ -176,6 +179,16 @@ export default function Closing() {
               >
                 Arsitektur sistem & deployment
               </p>
+              <p
+                style={{
+                  fontSize: "0.75rem",
+                  color: "#10b981",
+                  marginTop: "0.5rem",
+                  fontWeight: "600",
+                }}
+              >
+                Arsitektur serverless live
+              </p>
             </div>
 
             <div
@@ -215,6 +228,16 @@ export default function Closing() {
                 }}
               >
                 Data engineering & UX
+              </p>
+              <p
+                style={{
+                  fontSize: "0.75rem",
+                  color: "#10b981",
+                  marginTop: "0.5rem",
+                  fontWeight: "600",
+                }}
+              >
+                10 iterasi UX improvement
               </p>
             </div>
 
@@ -256,6 +279,16 @@ export default function Closing() {
               >
                 Model & validasi kualitas data
               </p>
+              <p
+                style={{
+                  fontSize: "0.75rem",
+                  color: "#10b981",
+                  marginTop: "0.5rem",
+                  fontWeight: "600",
+                }}
+              >
+                Isolation Forest + 110 skenario
+              </p>
             </div>
 
             <div
@@ -295,6 +328,16 @@ export default function Closing() {
                 }}
               >
                 Data sourcing & kebutuhan Bapenda
+              </p>
+              <p
+                style={{
+                  fontSize: "0.75rem",
+                  color: "#10b981",
+                  marginTop: "0.5rem",
+                  fontWeight: "600",
+                }}
+              >
+                8 provinsi tervalidasi
               </p>
             </div>
           </div>

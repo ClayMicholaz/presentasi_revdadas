@@ -7,11 +7,11 @@ export default function Demo() {
       </div>
       
       <div className="slide-content">
-        <h1>Bukan Mockup. Ini Live.</h1>
-        <h2>RevDadas sudah live — 9 komponen fungsional, data real, dapat diakses sekarang.</h2>
+        <h1>Bukan Mockup. Ini Functional Prototype.</h1>
+        <h2>RevDadas sudah live publik — 9 komponen fungsional, data real, dapat diakses sekarang. Belum diuji aparatur Bapenda (target: Live Prototype pada fase pilot).</h2>
         
         <div className="badges">
-          <span className="badge live">LIVE</span>
+          <span className="badge live">FUNCTIONAL PROTOTYPE</span>
           <span className="badge">
             <a href="https://revdadas.vercel.app/" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}>
               revdadas.vercel.app

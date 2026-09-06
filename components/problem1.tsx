@@ -38,6 +38,8 @@ export default function Problem1() {
           <li>705 entitas pemerintah teraudit</li>
           <li>Rekonsiliasi manual: <strong>20–30 hari/siklus</strong></li>
           <li>Ketika anomali ditemukan, siklus anggaran sudah terkunci</li>
+          <li style={{ marginTop: '1rem', paddingTop: '1rem', borderTop: '1px solid #e5e7eb' }}><strong>Validasi Problem:</strong> Divalidasi melalui 10 iterasi feedback mentor PIDI Hackathon</li>
+          <li>Mentor konfirmasi rekonsiliasi manual sebagai bottleneck utama Bapenda</li>
         </ul>
         
         <div className="evidence-callout" style={{ marginTop: '1.5rem' }}>
