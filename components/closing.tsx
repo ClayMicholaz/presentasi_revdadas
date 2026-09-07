@@ -165,19 +165,9 @@ export default function Closing() {
                   fontSize: "0.875rem",
                   fontWeight: "600",
                   color: "#475569",
-                  marginBottom: "0.75rem",
                 }}
               >
                 Team Lead
-              </p>
-              <p
-                style={{
-                  fontSize: "0.8125rem",
-                  color: "#64748b",
-                  lineHeight: "1.5",
-                }}
-              >
-                Arsitektur sistem & deployment
               </p>
             </div>
 
@@ -205,19 +195,9 @@ export default function Closing() {
                   fontSize: "0.875rem",
                   fontWeight: "600",
                   color: "#475569",
-                  marginBottom: "0.75rem",
                 }}
               >
                 Product/UX Lead
-              </p>
-              <p
-                style={{
-                  fontSize: "0.8125rem",
-                  color: "#64748b",
-                  lineHeight: "1.5",
-                }}
-              >
-                Data engineering & UX
               </p>
             </div>
 
@@ -245,19 +225,9 @@ export default function Closing() {
                   fontSize: "0.875rem",
                   fontWeight: "600",
                   color: "#475569",
-                  marginBottom: "0.75rem",
                 }}
               >
                 Tech/AI Lead
-              </p>
-              <p
-                style={{
-                  fontSize: "0.8125rem",
-                  color: "#64748b",
-                  lineHeight: "1.5",
-                }}
-              >
-                Model & validasi kualitas data
               </p>
             </div>
 
@@ -285,19 +255,9 @@ export default function Closing() {
                   fontSize: "0.875rem",
                   fontWeight: "600",
                   color: "#475569",
-                  marginBottom: "0.75rem",
                 }}
               >
                 Business/Domain Lead
-              </p>
-              <p
-                style={{
-                  fontSize: "0.8125rem",
-                  color: "#64748b",
-                  lineHeight: "1.5",
-                }}
-              >
-                Data sourcing & kebutuhan Bapenda
               </p>
             </div>
           </div>
