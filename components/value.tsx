@@ -15,20 +15,20 @@ export default function Value() {
             <h3>Pipeline AI</h3>
             <p style={{ fontSize: '0.9rem', lineHeight: '1.8' }}>
               <strong>1. Data Cleaning</strong><br/>
-              • De-duplikasi: &gt;1.000 baris ganda dihapus<br/>
-              • Decumulation: Eliminasi lonjakan semu hingga 2.146%<br/><br/>
+              • Pembersihan data otomatis: hapus duplikat &amp; koreksi lonjakan semu<br/>
+              • &gt;1.000 baris data cacat dihapus<br/><br/>
               
               <strong>2. Feature Engineering</strong><br/>
-              • Revenue_Norm, MoM_Change<br/>
-              • Ratio_to_MA, Seasonality_Deviation<br/><br/>
+              • Ekstraksi pola revenue, perbandingan antar bulan<br/>
+              • Deteksi anomali musiman<br/><br/>
               
               <strong>3. Dual AI Models</strong><br/>
-              • Isolation Forest (Anomaly Detection)<br/>
-              • Ensemble Prophet (Forecasting)<br/><br/>
+              • Deteksi anomali otomatis (machine learning)<br/>
+              • Prediksi revenue 6-24 bulan ke depan<br/><br/>
               
               <strong>4. Precompute Architecture</strong><br/>
-              • 110 skenario → 7 JSON statis<br/>
-              • Loading: &lt;2 detik (vs 15-30 detik sebelumnya)
+              • 110 skenario → 7 file JSON<br/>
+              • Dashboard muncul langsung (tanpa tunggu server)
             </p>
           </div>
           

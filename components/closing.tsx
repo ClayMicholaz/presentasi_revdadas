@@ -39,7 +39,7 @@ export default function Closing() {
           <div className="evidence-pill">
             <h3 style={{ color: "white" }}>AI Tervalidasi</h3>
             <p style={{ fontSize: "0.875rem" }}>
-              Isolation Forest + Backtest WAPE/sMAPE · 110 skenario
+              Model machine learning + backtest 110 skenario data real
             </p>
           </div>
           <div className="evidence-pill">
