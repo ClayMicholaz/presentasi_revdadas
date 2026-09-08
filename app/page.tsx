@@ -10,6 +10,7 @@ import Demo from "@/components/demo";
 import Differentiator from "@/components/differentiator";
 import Value from "@/components/value";
 import Closing from "@/components/closing";
+import Appendix from "@/components/appendix";
 
 export default function Home() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -140,6 +141,7 @@ export default function Home() {
       <Differentiator />
       <Value />
       <Closing />
+      <Appendix />
     </main>
   );
 }

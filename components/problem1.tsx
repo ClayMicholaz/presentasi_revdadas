@@ -12,15 +12,15 @@ export default function Problem1() {
         
         <div className="split-layout">
           <div className="left">
-            <div className="big-number">7.006</div>
-            <p className="label" style={{ fontSize: '0.875rem', color: '#6b7280' }}>
+            <div className="big-number" style={{ color: '#dc2626', background: '#fee2e2', padding: '1.5rem', borderRadius: '0.75rem' }}>7.006</div>
+            <p className="label" style={{ fontSize: '0.875rem', color: '#6b7280', marginTop: '1rem' }}>
               Kelemahan SPI — BPK RI IHPS I/2023
             </p>
           </div>
           
           <div className="right timeline">
             <div className="timeline-item">
-              <strong>Bulan 1</strong>
+              <strong>Awal Periode</strong>
               <p>Data self-assessment masuk</p>
             </div>
             <div className="timeline-item alert">

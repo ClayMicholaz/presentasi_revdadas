@@ -43,7 +43,7 @@ export default function Differentiator() {
                 <td className="highlight">Ya</td>
               </tr>
               <tr>
-                <td>Loading Instan (&lt;100ms)</td>
+                <td>Dashboard Muncul Langsung</td>
                 <td>Tidak</td>
                 <td>Tidak</td>
                 <td className="highlight">Ya</td>

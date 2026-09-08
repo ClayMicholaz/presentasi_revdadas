@@ -19,13 +19,16 @@ export default function Solution() {
         <div className="capability-pills">
           <div className="pill core">
             <h3>CORE — Anomaly Detection</h3>
-            <p>Isolation Forest</p>
+            <p>Machine Learning</p>
             <p>Identifikasi anomali PAD otomatis</p>
           </div>
           <div className="pill support">
             <h3>PENDUKUNG — Revenue Forecasting</h3>
-            <p>Ensemble Prophet + Naive-Seasonal</p>
-            <p>Proyeksi revenue 6–24 bulan</p>
+            <p>Prediksi AI berbasis historical pattern</p>
+            <p>Proyeksi revenue 6–24 bulan untuk perencanaan APBD</p>
+            <p style={{ fontSize: '0.85rem', marginTop: '0.5rem', fontStyle: 'italic', opacity: '0.9' }}>
+              Note: Forecasting sebagai reference, bukan untuk keputusan audit
+            </p>
           </div>
         </div>
         

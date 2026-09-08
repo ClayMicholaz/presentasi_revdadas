@@ -13,22 +13,22 @@ export default function Value() {
         <div className="two-column" style={{ marginTop: '2rem' }}>
           <div>
             <h3>Pipeline AI</h3>
-            <p style={{ fontSize: '0.9rem', lineHeight: '1.8' }}>
+            <p style={{ fontSize: '1.05rem', lineHeight: '1.8' }}>
               <strong>1. Data Cleaning</strong><br/>
-              • De-duplikasi: &gt;1.000 baris ganda dihapus<br/>
-              • Decumulation: Eliminasi lonjakan semu hingga 2.146%<br/><br/>
+              • Pembersihan data otomatis: hapus duplikat &amp; koreksi lonjakan semu<br/>
+              • &gt;1.000 baris data cacat dihapus<br/><br/>
               
               <strong>2. Feature Engineering</strong><br/>
-              • Revenue_Norm, MoM_Change<br/>
-              • Ratio_to_MA, Seasonality_Deviation<br/><br/>
+              • Ekstraksi pola revenue, perbandingan antar bulan<br/>
+              • Deteksi anomali musiman<br/><br/>
               
               <strong>3. Dual AI Models</strong><br/>
-              • Isolation Forest (Anomaly Detection)<br/>
-              • Ensemble Prophet (Forecasting)<br/><br/>
+              • Deteksi anomali otomatis (machine learning)<br/>
+              • Prediksi revenue 6-24 bulan ke depan<br/><br/>
               
               <strong>4. Precompute Architecture</strong><br/>
-              • 110 skenario → 7 JSON statis<br/>
-              • Loading: &lt;100ms (vs 15-30 detik sebelumnya)
+              • 110 skenario → 7 file JSON<br/>
+              • Dashboard muncul langsung (tanpa tunggu server)
             </p>
           </div>
           
@@ -40,7 +40,7 @@ export default function Value() {
                 <tbody>
                   <tr>
                     <td><strong>Waktu deteksi anomali</strong></td>
-                    <td>20-30 hari → <strong>&lt;100ms</strong></td>
+                    <td>20-30 hari → <strong>&lt;2 detik</strong></td>
                   </tr>
                   <tr>
                     <td><strong>Cakupan analisis</strong></td>
@@ -72,20 +72,10 @@ export default function Value() {
                 *Estimasi berbasis PAD DJPK 2024 terverifikasi (DKI + Jabar + Jatim + Banten = Rp 176.68T).
                 Recovery aktual bergantung investigasi audit. Pilot Bapenda adalah langkah validasi berikutnya.
               </p>
+              <p style={{ fontSize: '0.75rem', marginTop: '0.75rem', fontWeight: '600', color: '#92400e' }}>
+                Human Oversight: RevDadas adalah decision support tool — anomali memerlukan konfirmasi audit manual aparatur Bapenda.
+              </p>
             </div>
-          </div>
-        </div>
-        
-        <div style={{ marginTop: '2rem', textAlign: 'center' }}>
-          <h3>Tech Stack</h3>
-          <div className="badges" style={{ marginTop: '1rem' }}>
-            <span className="badge">Python</span>
-            <span className="badge">scikit-learn</span>
-            <span className="badge">Prophet</span>
-            <span className="badge">Next.js 16</span>
-            <span className="badge">React 19</span>
-            <span className="badge">TypeScript</span>
-            <span className="badge">Vercel</span>
           </div>
         </div>
       </div>

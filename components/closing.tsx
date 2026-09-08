@@ -33,13 +33,13 @@ export default function Closing() {
               >
                 revdadas.vercel.app
               </a>{" "}
-              · &lt;100ms · 9 komponen fungsional
+              · &lt;2 detik · 9 komponen fungsional
             </p>
           </div>
           <div className="evidence-pill">
             <h3 style={{ color: "white" }}>AI Tervalidasi</h3>
             <p style={{ fontSize: "0.875rem" }}>
-              Isolation Forest + Backtest WAPE/sMAPE · 110 skenario
+              Model machine learning + backtest 110 skenario data real
             </p>
           </div>
           <div className="evidence-pill">
@@ -94,6 +94,9 @@ export default function Closing() {
               <p style={{ fontSize: "0.875rem" }}>Pilot Gratis MoU</p>
               <p style={{ fontSize: "0.875rem" }}>DKI / Jabar target</p>
               <p style={{ fontSize: "0.875rem" }}>Zero cost for pemda</p>
+              <p style={{ fontSize: "0.75rem", marginTop: "0.5rem", fontStyle: "italic", opacity: "0.9" }}>
+                Next validation: demo ke Bapenda melalui jaringan UBM & PIDI
+              </p>
             </div>
             <div
               style={{
@@ -162,19 +165,9 @@ export default function Closing() {
                   fontSize: "0.875rem",
                   fontWeight: "600",
                   color: "#475569",
-                  marginBottom: "0.75rem",
                 }}
               >
                 Team Lead
-              </p>
-              <p
-                style={{
-                  fontSize: "0.8125rem",
-                  color: "#64748b",
-                  lineHeight: "1.5",
-                }}
-              >
-                Arsitektur sistem & deployment
               </p>
             </div>
 
@@ -202,19 +195,9 @@ export default function Closing() {
                   fontSize: "0.875rem",
                   fontWeight: "600",
                   color: "#475569",
-                  marginBottom: "0.75rem",
                 }}
               >
                 Product/UX Lead
-              </p>
-              <p
-                style={{
-                  fontSize: "0.8125rem",
-                  color: "#64748b",
-                  lineHeight: "1.5",
-                }}
-              >
-                Data engineering & UX
               </p>
             </div>
 
@@ -242,19 +225,9 @@ export default function Closing() {
                   fontSize: "0.875rem",
                   fontWeight: "600",
                   color: "#475569",
-                  marginBottom: "0.75rem",
                 }}
               >
                 Tech/AI Lead
-              </p>
-              <p
-                style={{
-                  fontSize: "0.8125rem",
-                  color: "#64748b",
-                  lineHeight: "1.5",
-                }}
-              >
-                Model & validasi kualitas data
               </p>
             </div>
 
@@ -282,19 +255,9 @@ export default function Closing() {
                   fontSize: "0.875rem",
                   fontWeight: "600",
                   color: "#475569",
-                  marginBottom: "0.75rem",
                 }}
               >
                 Business/Domain Lead
-              </p>
-              <p
-                style={{
-                  fontSize: "0.8125rem",
-                  color: "#64748b",
-                  lineHeight: "1.5",
-                }}
-              >
-                Data sourcing & kebutuhan Bapenda
               </p>
             </div>
           </div>

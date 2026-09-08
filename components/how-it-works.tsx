@@ -20,12 +20,12 @@ export default function HowItWorks() {
           <div className="capability-pills">
             <div className="pill core">
               <h3>CORE — Anomaly Detection</h3>
-              <p>Isolation Forest</p>
+              <p>Machine Learning</p>
               <p>Identifikasi anomali PAD otomatis</p>
             </div>
             <div className="pill support">
               <h3>PENDUKUNG — Revenue Forecasting</h3>
-              <p>Ensemble Prophet + Naive-Seasonal</p>
+              <p>Prediksi AI</p>
               <p>Proyeksi revenue 6–24 bulan</p>
             </div>
           </div>
@@ -84,7 +84,7 @@ export default function HowItWorks() {
                 <tr>
                   <td>Waktu deteksi</td>
                   <td>20–30 hari</td>
-                  <td>Instan (&lt;100ms)</td>
+                  <td>Langsung (&lt;2 detik)</td>
                 </tr>
                 <tr>
                   <td>Jenis audit</td>
