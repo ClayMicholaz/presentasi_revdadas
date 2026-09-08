@@ -6,11 +6,11 @@ export default function Problem2() {
         <span>Root Cause Analysis</span>
       </div>
       
-      <div className="slide-content" style={{ paddingTop: '2.5rem' }}>
-        <h1 style={{ marginBottom: '1rem' }}>Data Ada, Tapi Tidak Bisa Dipakai untuk Keputusan</h1>
-        <h2 style={{ textAlign: 'center', marginBottom: '2rem' }}>Bapenda punya banyak data, tapi tidak punya cara otomatis untuk validasi — akhirnya stuck, tidak bisa ambil keputusan.</h2>
+      <div className="slide-content" style={{ paddingTop: '2rem' }}>
+        <h1 style={{ marginBottom: '0.85rem' }}>Data Ada, Tapi Tidak Bisa Dipakai untuk Keputusan</h1>
+        <h2 style={{ textAlign: 'center', marginBottom: '1.75rem' }}>Bapenda punya banyak data, tapi tidak punya cara otomatis untuk validasi — akhirnya stuck, tidak bisa ambil keputusan.</h2>
         
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1.5rem', position: 'relative', marginBottom: '1.75rem' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1.5rem', position: 'relative', marginBottom: '1.5rem' }}>
           {/* Card 1: SIAPA */}
           <div style={{ 
             background: 'white', 
@@ -38,20 +38,20 @@ export default function Problem2() {
             </div>
             <h3 style={{ color: '#1e40af', marginBottom: '1rem', fontSize: '0.95rem', fontWeight: '700' }}>SIAPA</h3>
             <p style={{ fontWeight: '600', marginBottom: '0.75rem', fontSize: '0.95rem' }}>Kepala Bidang Pengawasan Bapenda Provinsi</p>
-            <p style={{ fontSize: '0.9rem', lineHeight: '1.6', color: '#475569' }}>Menerima ribuan baris data setoran pajak setiap bulan</p>
-            <p style={{ fontSize: '0.85rem', marginTop: '0.75rem', color: '#64748b', fontStyle: 'italic' }}>
-              Menangani ribuan transaksi WP/bulan tanpa sistem audit otomatis
-            </p>
+            <ul style={{ fontSize: '0.9rem', lineHeight: '1.7', color: '#475569', paddingLeft: '1.25rem', margin: 0 }}>
+              <li>Menangani ribuan baris data setoran WP/bulan secara manual tanpa sistem validasi otomatis</li>
+            </ul>
           </div>
 
           {/* Arrow 1 */}
           <div style={{ 
             position: 'absolute', 
-            left: 'calc(33.33% - 0.75rem)', 
+            left: 'calc(33.33% - 1rem)', 
             top: '50%', 
             transform: 'translateY(-50%)',
-            fontSize: '1.5rem',
-            color: '#94a3b8',
+            fontSize: '2rem',
+            color: '#64748b',
+            fontWeight: 'bold',
             zIndex: 1
           }}>→</div>
 
@@ -95,11 +95,12 @@ export default function Problem2() {
           {/* Arrow 2 */}
           <div style={{ 
             position: 'absolute', 
-            left: 'calc(66.66% - 0.75rem)', 
+            left: 'calc(66.66% - 1rem)', 
             top: '50%', 
             transform: 'translateY(-50%)',
-            fontSize: '1.5rem',
-            color: '#94a3b8',
+            fontSize: '2rem',
+            color: '#64748b',
+            fontWeight: 'bold',
             zIndex: 1
           }}>→</div>
 
@@ -125,17 +126,18 @@ export default function Problem2() {
             }}>03</div>
             <div style={{ marginBottom: '0.75rem' }}>
               <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#c2410c" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
-                <polyline points="17 6 23 6 23 12"></polyline>
+                <polyline points="23 18 13.5 8.5 8.5 13.5 1 6"></polyline>
+                <polyline points="17 18 23 18 23 12"></polyline>
               </svg>
             </div>
             <h3 style={{ color: '#c2410c', marginBottom: '1rem', fontSize: '0.95rem', fontWeight: '700' }}>DAMPAK</h3>
             <p style={{ fontWeight: '600', marginBottom: '0.75rem', fontSize: '0.95rem', color: '#9a3412' }}>
               Under-target APBD & Kebocoran PAD
             </p>
-            <p style={{ fontSize: '0.9rem', lineHeight: '1.7', color: '#475569' }}>
-              Penetapan target terpaksa terlalu konservatif, memangkas ruang alokasi belanja publik produktif (infrastruktur & layanan dasar)
-            </p>
+            <ul style={{ fontSize: '0.9rem', lineHeight: '1.7', color: '#475569', paddingLeft: '1.25rem', margin: 0 }}>
+              <li>Penetapan target terpaksa terlalu konservatif</li>
+              <li>Memangkas ruang alokasi belanja publik produktif (infrastruktur & layanan dasar)</li>
+            </ul>
           </div>
         </div>
         
