@@ -50,11 +50,11 @@ export default function Workflow() {
               <tr>
                 <td>Jenis audit</td>
                 <td>Acak, merata</td>
-                <td>Targeted, berbasis risiko</td>
+                <td>Fokus ke data yang berisiko tinggi</td>
               </tr>
               <tr>
                 <td>Dokumentasi</td>
-                <td>Manual spreadsheet</td>
+                <td>Ketik manual di spreadsheet</td>
                 <td>PDF otomatis</td>
               </tr>
             </tbody>

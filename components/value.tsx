@@ -7,28 +7,28 @@ export default function Value() {
       </div>
       
       <div className="slide-content">
-        <h1>Pipeline AI & Impact Tervalidasi</h1>
-        <h2>Dari CSV mentah ke insight audit — dengan data science yang ter-validasi.</h2>
+        <h1>Teknologi & Dampak Terukur</h1>
+        <h2>Dari data mentah ke rekomendasi audit — dengan teknologi yang sudah diuji.</h2>
         
         <div className="two-column" style={{ marginTop: '2rem' }}>
           <div>
-            <h3>Pipeline AI</h3>
+            <h3>Cara Kerja Teknologi</h3>
             <p style={{ fontSize: '1.05rem', lineHeight: '1.8' }}>
-              <strong>1. Data Cleaning</strong><br/>
-              • Pembersihan data otomatis: hapus duplikat &amp; koreksi lonjakan semu<br/>
-              • &gt;1.000 baris data cacat dihapus<br/><br/>
+              <strong>1. Pembersihan Data</strong><br/>
+              • Hapus data duplikat dan koreksi angka yang salah<br/>
+              • Lebih dari 1.000 baris data rusak dibersihkan<br/><br/>
               
-              <strong>2. Feature Engineering</strong><br/>
-              • Ekstraksi pola revenue, perbandingan antar bulan<br/>
-              • Deteksi anomali musiman<br/><br/>
+              <strong>2. Analisis Pola</strong><br/>
+              • Bandingkan pendapatan setiap bulan<br/>
+              • Deteksi pola tidak normal dan pola musiman<br/><br/>
               
-              <strong>3. Dual AI Models</strong><br/>
-              • Deteksi anomali otomatis (machine learning)<br/>
-              • Prediksi revenue 6-24 bulan ke depan<br/><br/>
+              <strong>3. Kecerdasan Buatan (AI)</strong><br/>
+              • Deteksi anomali otomatis<br/>
+              • Prediksi pendapatan 6-24 bulan ke depan<br/><br/>
               
-              <strong>4. Precompute Architecture</strong><br/>
-              • 110 skenario → 7 file JSON<br/>
-              • Dashboard muncul langsung (tanpa tunggu server)
+              <strong>4. Dashboard Cepat</strong><br/>
+              • 110 skenario sudah dihitung sebelumnya<br/>
+              • Dashboard muncul langsung tanpa loading
             </p>
           </div>
           
@@ -69,11 +69,11 @@ export default function Value() {
                 </tbody>
               </table>
               <p style={{ fontSize: '0.75rem', marginTop: '1rem', fontStyle: 'italic', color: '#78350f' }}>
-                *Estimasi berbasis PAD DJPK 2024 terverifikasi (DKI + Jabar + Jatim + Banten = Rp 176.68T).
-                Recovery aktual bergantung investigasi audit. Pilot Bapenda adalah langkah validasi berikutnya.
+                *Estimasi berbasis PAD DJPK 2024 (DKI + Jabar + Jatim + Banten = Rp 176.68T).
+                Angka aktual bergantung hasil audit lapangan. Pilot dengan Bapenda adalah langkah validasi berikutnya.
               </p>
               <p style={{ fontSize: '0.75rem', marginTop: '0.75rem', fontWeight: '600', color: '#92400e' }}>
-                Human Oversight: RevDadas adalah decision support tool — anomali memerlukan konfirmasi audit manual aparatur Bapenda.
+                Pengawasan Manusia Tetap Diperlukan: RevDadas adalah alat bantu keputusan — anomali harus dikonfirmasi oleh tim audit Bapenda.
               </p>
             </div>
           </div>

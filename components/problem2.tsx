@@ -7,35 +7,35 @@ export default function Problem2() {
       </div>
       
       <div className="slide-content">
-        <h1>Data Ada. Insight Tidak.</h1>
-        <h2 style={{ textAlign: 'center' }}>Bapenda terjebak analysis paralysis — data berlimpah, tanpa instrumen validasi.</h2>
+        <h1>Data Ada, Tapi Tidak Bisa Dipakai untuk Keputusan</h1>
+        <h2 style={{ textAlign: 'center' }}>Bapenda punya banyak data, tapi tidak punya cara otomatis untuk validasi — akhirnya stuck, tidak bisa ambil keputusan.</h2>
         
         <div className="three-column">
           <div className="column">
-            <h3>WHO</h3>
+            <h3>SIAPA</h3>
             <p><strong>Kepala Bidang Pengawasan Bapenda Provinsi</strong></p>
-            <p>Menerima ribuan baris data setoran self-assessment setiap bulan</p>
+            <p>Menerima ribuan baris data setoran pajak setiap bulan</p>
           </div>
           
           <div className="column">
-            <h3>ROOT CAUSE</h3>
-            <p><strong>Self-assessment tax = Asimetri informasi</strong></p>
-            <p>Bapenda tidak punya instrumen validasi otomatis untuk cocokkan nilai setoran vs transaksi riil</p>
+            <h3>AKAR MASALAH</h3>
+            <p><strong>Sistem pajak self-report = Tidak ada cross-check otomatis</strong></p>
+            <p>Bapenda tidak punya tools untuk cocokkan: "Apakah nilai yang dilaporkan wajib pajak sesuai dengan transaksi real?"</p>
           </div>
           
           <div className="column">
-            <h3>CONSEQUENCE</h3>
-            <p><strong>Analysis Paralysis</strong></p>
-            <p>Target APBD ditetapkan berbasis asumsi statis → defisit pembiayaan infrastruktur, kesehatan, pendidikan</p>
+            <h3>DAMPAK</h3>
+            <p><strong>Target APBD Pakai Asumsi Lama</strong></p>
+            <p>Karena tidak yakin data akurat, target APBD ditetapkan pakai asumsi konservatif → uang untuk infrastruktur, kesehatan, pendidikan jadi kurang</p>
           </div>
         </div>
         
         <div className="bottom-strip">
           <div className="signal-item">
-            <strong>Kesiapan institusional:</strong> 73,6% pemda sudah Digital (ETPD Sem.I/2023)
+            <strong>Kesiapan institusi:</strong> 73,6% pemerintah daerah sudah pakai sistem digital (ETPD Sem.I/2023)
           </div>
           <div className="signal-item">
-            <strong>Regulatory push:</strong> UU HKPD 2022 amanatkan optimasi PAD
+            <strong>Dorongan regulasi:</strong> UU HKPD 2022 mewajibkan optimasi PAD
           </div>
         </div>
       </div>

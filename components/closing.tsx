@@ -37,9 +37,9 @@ export default function Closing() {
             </p>
           </div>
           <div className="evidence-pill">
-            <h3 style={{ color: "white" }}>AI Tervalidasi</h3>
+            <h3 style={{ color: "white" }}>Teknologi Teruji</h3>
             <p style={{ fontSize: "0.875rem" }}>
-              Model machine learning + backtest 110 skenario data real
+              AI yang sudah diuji dengan 110 skenario data nyata
             </p>
           </div>
           <div className="evidence-pill">
@@ -91,11 +91,11 @@ export default function Closing() {
               <h4 style={{ color: "white", marginBottom: "0.75rem" }}>
                 Fase 1 (0-6 bln)
               </h4>
-              <p style={{ fontSize: "0.875rem" }}>Pilot Gratis MoU</p>
-              <p style={{ fontSize: "0.875rem" }}>DKI / Jabar target</p>
-              <p style={{ fontSize: "0.875rem" }}>Zero cost for pemda</p>
+              <p style={{ fontSize: "0.875rem" }}>Uji coba gratis dengan Bapenda</p>
+              <p style={{ fontSize: "0.875rem" }}>Target: DKI Jakarta / Jawa Barat</p>
+              <p style={{ fontSize: "0.875rem" }}>Tidak ada biaya untuk pemda</p>
               <p style={{ fontSize: "0.75rem", marginTop: "0.5rem", fontStyle: "italic", opacity: "0.9" }}>
-                Next validation: demo ke Bapenda melalui jaringan UBM & PIDI
+                Validasi berikutnya: demo ke Bapenda melalui jaringan UBM & PIDI
               </p>
             </div>
             <div
@@ -108,9 +108,9 @@ export default function Closing() {
               <h4 style={{ color: "white", marginBottom: "0.75rem" }}>
                 Fase 2 (6-18 bln)
               </h4>
-              <p style={{ fontSize: "0.875rem" }}>SaaS B2G: Rp 15-25 jt/bln</p>
-              <p style={{ fontSize: "0.875rem" }}>e-Katalog LKPP</p>
-              <p style={{ fontSize: "0.875rem" }}>Payback 6-8 bulan</p>
+              <p style={{ fontSize: "0.875rem" }}>Layanan berbayar: Rp 15-25 jt/bln</p>
+              <p style={{ fontSize: "0.875rem" }}>Masuk katalog pengadaan pemerintah</p>
+              <p style={{ fontSize: "0.875rem" }}>Balik modal dalam 6-8 bulan</p>
             </div>
           </div>
         </div>
@@ -279,9 +279,7 @@ export default function Closing() {
                 margin: 0,
               }}
             >
-              Gap & Mitigasi: legal/compliance procurement pemerintah & business
-              development → pendampingan mentor PIDI, kolaborasi inkubator
-              govtech
+              Kekurangan Tim & Solusinya: pengalaman hukum pengadaan pemerintah & pengembangan bisnis → didampingi mentor PIDI dan inkubator teknologi pemerintah
             </p>
           </div>
         </div>

@@ -7,33 +7,33 @@ export default function Solution() {
       </div>
       
       <div className="slide-content">
-        <h1>RevDadas: Anomaly Detection untuk Bapenda</h1>
-        <h2>RevDadas mengubah 20–30 hari rekonsiliasi menjadi deteksi anomali instan.</h2>
+        <h1>RevDadas: Deteksi Anomali Otomatis untuk Bapenda</h1>
+        <h2>RevDadas mengubah 20–30 hari rekonsiliasi menjadi deteksi anomali yang langsung muncul.</h2>
         
         <div className="value-prop">
           <p className="value-statement">
-            RevDadas membantu Bapenda provinsi mendeteksi anomali pencatatan PAD secara otomatis dan instan — langsung di browser, tanpa instalasi.
+            RevDadas membantu Bapenda provinsi mendeteksi anomali pencatatan PAD secara otomatis — langsung di browser, tanpa instalasi.
           </p>
         </div>
         
         <div className="capability-pills">
           <div className="pill core">
-            <h3>CORE — Anomaly Detection</h3>
-            <p>Machine Learning</p>
+            <h3>FITUR UTAMA — Deteksi Anomali</h3>
+            <p>Kecerdasan Buatan</p>
             <p>Identifikasi anomali PAD otomatis</p>
           </div>
           <div className="pill support">
-            <h3>PENDUKUNG — Revenue Forecasting</h3>
-            <p>Prediksi AI berbasis historical pattern</p>
+            <h3>FITUR PENDUKUNG — Prediksi Revenue</h3>
+            <p>Prediksi berbasis pola data historis</p>
             <p>Proyeksi revenue 6–24 bulan untuk perencanaan APBD</p>
             <p style={{ fontSize: '0.85rem', marginTop: '0.5rem', fontStyle: 'italic', opacity: '0.9' }}>
-              Note: Forecasting sebagai reference, bukan untuk keputusan audit
+              Catatan: Prediksi hanya sebagai referensi, bukan untuk keputusan audit
             </p>
           </div>
         </div>
         
         <div className="target-market">
-          <p><strong>Target market:</strong> 38 Bapenda Provinsi → ekspansi 514 Kab/Kota</p>
+          <p><strong>Target pasar:</strong> 38 Bapenda Provinsi → ekspansi 514 Kab/Kota</p>
         </div>
       </div>
       
