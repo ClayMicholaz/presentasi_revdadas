@@ -29,13 +29,13 @@ export default function Demo() {
             <li>Chart Proporsi Sumber Pendapatan (3 Kategori)</li>
             <li>Rekomendasi Kebijakan dari AI</li>
             <li>Sidebar Interaktif</li>
-            <li>Export Laporan PDF</li>
+            <li>Export Laporan (PDF, Excel, Word)</li>
           </ul>
         </div>
         
         <div style={{ textAlign: 'center', marginTop: '2rem' }}>
           <p style={{ fontSize: '0.9rem', color: '#cbd5e1' }}>8 Provinsi Tervalidasi · 14 Komponen APBD · Data DJPK 2023–2025</p>
-          <p style={{ fontSize: '0.85rem', color: '#94a3b8', marginTop: '0.5rem' }}>Export: PDF (editable untuk laporan audit)</p>
+          <p style={{ fontSize: '0.85rem', color: '#94a3b8', marginTop: '0.5rem' }}>Export: PDF, Excel, Word (editable untuk laporan audit)</p>
         </div>
       </div>
       
