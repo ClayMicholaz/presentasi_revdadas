@@ -27,7 +27,7 @@ export default function Value() {
               • Prediksi pendapatan 6-24 bulan ke depan<br/><br/>
               
               <strong>4. Dashboard Cepat</strong><br/>
-              • 110 skenario sudah dihitung sebelumnya<br/>
+              • ~7.900+ skenario sudah dihitung sebelumnya<br/>
               • Dashboard muncul langsung tanpa loading
             </p>
           </div>
@@ -48,7 +48,7 @@ export default function Value() {
                   </tr>
                   <tr>
                     <td><strong>Data quality</strong></td>
-                    <td>110 skenario tervalidasi</td>
+                    <td>110 skenario divalidasi manual</td>
                   </tr>
                 </tbody>
               </table>
