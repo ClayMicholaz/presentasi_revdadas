@@ -89,7 +89,7 @@ export default function Differentiator() {
                 Dibangun Khusus untuk Fiskal Daerah
               </strong>
               <p style={{ fontSize: "0.85rem", margin: 0, lineHeight: "1.6" }}>
-                Disesuaikan langsung dengan aturan UU HKPD & format data DJPK — bukan dashboard umum
+                Disesuaikan langsung dengan aturan UU HKPD dan format data DJPK, bukan dashboard umum
               </p>
             </div>
             <div
@@ -133,7 +133,7 @@ export default function Differentiator() {
                 Kode Bisa Diperiksa Pemerintah
               </strong>
               <p style={{ fontSize: "0.85rem", margin: 0, lineHeight: "1.6" }}>
-                Program dan cara kerja AI bisa diaudit — syarat wajib untuk sistem audit pemerintah
+                Program dan cara kerja AI bisa diaudit, syarat wajib untuk sistem audit pemerintah
               </p>
             </div>
           </div>

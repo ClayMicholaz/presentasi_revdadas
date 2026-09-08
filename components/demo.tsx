@@ -8,7 +8,7 @@ export default function Demo() {
       
       <div className="slide-content">
         <h1>Prototype yang Bisa Langsung Dicoba</h1>
-        <h2>RevDadas sudah live dan bisa diakses publik — 9 fitur lengkap dengan data real dari DJPK. Belum diuji oleh Bapenda (target: validasi dengan Bapenda pada fase pilot).</h2>
+        <h2>RevDadas sudah live dan bisa diakses publik. 9 fitur lengkap dengan data real dari DJPK. Belum diuji oleh Bapenda (target: validasi dengan Bapenda pada fase pilot).</h2>
         
         <div className="badges">
           <span className="badge live">PROTOTIPE FUNGSIONAL</span>

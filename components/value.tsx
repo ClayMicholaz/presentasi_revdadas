@@ -8,7 +8,7 @@ export default function Value() {
       
       <div className="slide-content">
         <h1>Teknologi & Dampak Terukur</h1>
-        <h2>Dari data mentah ke rekomendasi audit — dengan teknologi yang sudah diuji.</h2>
+        <h2>Dari data mentah ke rekomendasi audit dengan teknologi yang sudah diuji.</h2>
         
         <div className="two-column" style={{ marginTop: '2rem' }}>
           <div>
@@ -73,7 +73,7 @@ export default function Value() {
                 Angka aktual bergantung hasil audit lapangan. Pilot dengan Bapenda adalah langkah validasi berikutnya.
               </p>
               <p style={{ fontSize: '0.8rem', marginTop: '0.75rem', fontWeight: '600', color: '#92400e' }}>
-                Pengawasan Manusia Tetap Diperlukan: RevDadas adalah alat bantu keputusan — anomali harus dikonfirmasi oleh tim audit Bapenda.
+                Pengawasan Manusia Tetap Diperlukan: RevDadas adalah alat bantu keputusan. Anomali harus dikonfirmasi oleh tim audit Bapenda.
               </p>
             </div>
           </div>

@@ -108,7 +108,7 @@ export default function Closing() {
 
         <div style={{ textAlign: "center", margin: "1.25rem 0", padding: "1rem 0" }}>
           <p style={{ fontSize: "1.15rem", color: "#ffffff", fontStyle: "italic", fontWeight: "600", textShadow: "0 2px 4px rgba(0,0,0,0.3)" }}>
-            &quot;Dari data APBD ke keputusan audit — dalam hitungan detik.&quot;
+            &quot;Dari data APBD ke keputusan audit dalam hitungan detik.&quot;
           </p>
         </div>
 

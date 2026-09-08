@@ -8,7 +8,7 @@ export default function Workflow() {
       
       <div className="slide-content">
         <h1>Dari Data ke Keputusan Audit: Proses Cepat</h1>
-        <h2>Satu workflow sederhana — dari buka browser sampai dapat laporan audit.</h2>
+        <h2>Satu workflow sederhana: dari buka browser sampai dapat laporan audit.</h2>
         
         <div className="workflow">
           <div className="flow-step">

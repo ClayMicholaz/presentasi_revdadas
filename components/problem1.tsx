@@ -7,7 +7,7 @@ export default function Problem1() {
       </div>
       
       <div className="slide-content" style={{ paddingTop: '2.5rem' }}>
-        <h1 style={{ marginBottom: '0.85rem' }}>Anomali fiskal Bapenda tidak terdeteksi — sampai terlambat.</h1>
+        <h1 style={{ marginBottom: '0.85rem' }}>Anomali fiskal Bapenda tidak terdeteksi sampai terlambat.</h1>
         <h2 style={{ marginBottom: '2rem' }}>7.006 Kelemahan. Satu Penyebab: Rekonsiliasi Manual yang Memakan Waktu 30 Hari.</h2>
         
         <div className="split-layout" style={{ display: 'grid', gridTemplateColumns: '1fr 1.5fr', gap: '2.5rem', marginTop: '0', alignItems: 'center' }}>
@@ -82,7 +82,7 @@ export default function Problem1() {
             }}>
               <strong style={{ fontSize: '1.05rem', color: '#92400e' }}>Hari 1–30</strong>
               <p style={{ marginTop: '0.5rem', fontSize: '0.95rem', color: '#475569' }}>
-                <strong>Rekonsiliasi manual</strong> — validasi data PAD secara manual
+                <strong>Rekonsiliasi manual</strong>: validasi data PAD secara manual
               </p>
             </div>
             

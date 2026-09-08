@@ -8,7 +8,7 @@ export default function Problem2() {
       
       <div className="slide-content" style={{ paddingTop: '2rem' }}>
         <h1 style={{ marginBottom: '0.85rem' }}>Data Ada, Tapi Tidak Bisa Dipakai untuk Keputusan</h1>
-        <h2 style={{ textAlign: 'center', marginBottom: '1.75rem' }}>Bapenda punya banyak data, tapi tidak punya cara otomatis untuk validasi — akhirnya stuck, tidak bisa ambil keputusan.</h2>
+        <h2 style={{ textAlign: 'center', marginBottom: '1.75rem' }}>Bapenda punya banyak data, tapi tidak punya cara otomatis untuk validasi. Akhirnya stuck, tidak bisa ambil keputusan.</h2>
         
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1.5rem', position: 'relative', marginBottom: '1.5rem' }}>
           {/* Card 1: SIAPA */}

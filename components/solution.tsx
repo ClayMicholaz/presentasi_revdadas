@@ -19,19 +19,19 @@ export default function Solution() {
           color: '#1e293b',
           fontWeight: '500'
         }}>
-          RevDadas membantu Bapenda provinsi mendeteksi anomali pencatatan PAD secara otomatis — langsung di browser, tanpa instalasi.
+          RevDadas membantu Bapenda provinsi mendeteksi anomali pencatatan PAD secara otomatis, langsung di browser, tanpa instalasi.
         </p>
         
         <div className="capability-pills" style={{ marginTop: '2.5rem' }}>
           <div className="pill core">
-            <h3>FITUR UTAMA — Deteksi Anomali</h3>
+            <h3>FITUR UTAMA: Deteksi Anomali</h3>
             <p>Kecerdasan Buatan</p>
             <p>Identifikasi anomali PAD otomatis</p>
           </div>
           <div className="pill support">
-            <h3>FITUR PENDUKUNG — Prediksi Revenue</h3>
+            <h3>FITUR PENDUKUNG: Prediksi Revenue</h3>
             <p>Prediksi berbasis pola data historis</p>
-            <p>Proyeksi revenue 6–24 bulan untuk perencanaan APBD</p>
+            <p>Proyeksi revenue 6 sampai 24 bulan untuk perencanaan APBD</p>
             <p style={{ fontSize: '0.85rem', marginTop: '0.5rem', fontStyle: 'italic', opacity: '0.9' }}>
               Catatan: Prediksi hanya sebagai referensi, bukan untuk keputusan audit
             </p>
