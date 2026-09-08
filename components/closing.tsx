@@ -240,24 +240,14 @@ export default function Closing() {
           </div>
 
           <div style={{ textAlign: "center", marginTop: "1.5rem" }}>
-            <p style={{ fontSize: "1.05rem", marginBottom: "0.5rem" }}>
+            <p style={{ fontSize: "1.15rem", marginBottom: "0.5rem" }}>
               <a
                 href="https://revdadas.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{ color: "#fbbf24", fontWeight: "600" }}
+                style={{ color: "#fbbf24", fontWeight: "600", fontSize: "1.25rem" }}
               >
                 revdadas.vercel.app
-              </a>
-            </p>
-            <p style={{ fontSize: "0.9rem", color: "rgba(255,255,255,0.8)" }}>
-              <a
-                href="https://github.com/KwikAndreas/revdadas"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ color: "rgba(255,255,255,0.8)" }}
-              >
-                github.com/KwikAndreas/revdadas
               </a>
             </p>
           </div>

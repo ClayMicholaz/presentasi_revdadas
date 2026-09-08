@@ -73,7 +73,7 @@ export default function Differentiator() {
               textAlign: "center",
             }}
           >
-            Defensibility / Competitive Moat
+            Keunggulan yang Sulit Ditiru
           </h3>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "1.25rem" }}>
             <div
@@ -92,10 +92,10 @@ export default function Differentiator() {
                   color: "#1e40af",
                 }}
               >
-                Domain-Specific Logic
+                Dibangun Khusus untuk Fiskal Daerah
               </strong>
               <p style={{ fontSize: "0.85rem", margin: 0, lineHeight: "1.6" }}>
-                Disesuaikan langsung dengan regulasi UU HKPD & format data DJPK — bukan dashboard generic
+                Disesuaikan langsung dengan aturan UU HKPD & format data DJPK — bukan dashboard umum
               </p>
             </div>
             <div
@@ -114,10 +114,10 @@ export default function Differentiator() {
                   color: "#1e40af",
                 }}
               >
-                Zero-Infrastructure Cost
+                Tidak Perlu Server Mahal
               </strong>
               <p style={{ fontSize: "0.85rem", margin: 0, lineHeight: "1.6" }}>
-                Berjalan langsung di browser tanpa beban server mahal bagi pemda
+                Berjalan langsung di browser tanpa biaya server untuk pemda
               </p>
             </div>
             <div
@@ -136,10 +136,10 @@ export default function Differentiator() {
                   color: "#1e40af",
                 }}
               >
-                Audit Readiness (Transparency)
+                Kode Bisa Diperiksa Pemerintah
               </strong>
               <p style={{ fontSize: "0.85rem", margin: 0, lineHeight: "1.6" }}>
-                Kode & algoritma transparan (explainable) — syarat mutlak sistem audit pemerintah
+                Program dan cara kerja AI bisa diaudit — syarat wajib untuk sistem audit pemerintah
               </p>
             </div>
           </div>
