@@ -81,11 +81,11 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: safe center;
   align-items: center;
   height: 100svh;
   max-height: 100svh;
-  overflow: hidden;
+  overflow-y: auto;
   scrollbar-gutter: stable;
   padding: clamp(5rem, 8vh, 6.5rem) clamp(1rem, 5vw, 4rem)
     clamp(4rem, 7vh, 5rem);
@@ -918,6 +918,8 @@ body {
 
 @media (min-width: 1280px) and (max-height: 950px) {
   .section {
+    overflow-y: auto;
+    justify-content: flex-start;
     padding-top: 4rem;
     padding-bottom: 3.5rem;
   }

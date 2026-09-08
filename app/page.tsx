@@ -21,8 +21,6 @@ export default function Home() {
     const container = containerRef.current;
     if (!container) return;
 
-    const isMobile = () => window.innerWidth <= 1024;
-
     const handleWheel = (event: WheelEvent) => {
       if (isScrolling.current || Math.abs(event.deltaY) < 2) {
         event.preventDefault();
@@ -50,24 +48,7 @@ export default function Home() {
 
       const currentSection = sections[currentIndex] as HTMLElement;
 
-      if (isMobile()) {
-        const sectionScrollHeight = currentSection.scrollHeight;
-        const sectionClientHeight = currentSection.clientHeight;
-        const sectionScrollTop = currentSection.scrollTop;
-
-        if (sectionScrollHeight > sectionClientHeight) {
-          const isAtTop = sectionScrollTop <= 1;
-          const isAtBottom =
-            sectionScrollTop + sectionClientHeight >= sectionScrollHeight - 1;
-
-          if (
-            (event.deltaY < 0 && !isAtTop) ||
-            (event.deltaY > 0 && !isAtBottom)
-          ) {
-            return;
-          }
-        }
-      } else if (currentSection.classList.contains("scrollable")) {
+      if (currentSection.scrollHeight > currentSection.clientHeight) {
         const isAtTop = currentSection.scrollTop <= 1;
         const isAtBottom =
           currentSection.scrollTop + currentSection.clientHeight >=
