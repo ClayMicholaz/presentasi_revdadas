@@ -26,7 +26,7 @@ export default function Demo() {
             <li>Tabel Deteksi Anomali + Alasan AI</li>
             <li>Kalkulator Dampak</li>
             <li>Chart Historis vs Prediksi Revenue</li>
-            <li>Chart Proporsi 14 Komponen APBD</li>
+            <li>Chart Proporsi Sumber Pendapatan (3 Kategori)</li>
             <li>Rekomendasi Kebijakan dari AI</li>
             <li>Sidebar Interaktif</li>
             <li>Export Laporan PDF</li>
