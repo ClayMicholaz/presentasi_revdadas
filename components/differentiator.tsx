@@ -36,13 +36,7 @@ export default function Differentiator() {
                 <td className="highlight" style={{ textAlign: "center", color: "#16a34a", fontSize: "1.25rem" }}>✓</td>
               </tr>
               <tr>
-                <td>Bahasa Indonesia + Konteks Pemda</td>
-                <td style={{ textAlign: "center", color: "#94a3b8" }}>✕</td>
-                <td style={{ textAlign: "center", color: "#94a3b8" }}>✕</td>
-                <td className="highlight" style={{ textAlign: "center", color: "#16a34a", fontSize: "1.25rem" }}>✓</td>
-              </tr>
-              <tr>
-                <td>Dashboard Muncul Langsung</td>
+                <td>Penjelasan Anomali Otomatis (Bahasa Indonesia)</td>
                 <td style={{ textAlign: "center", color: "#94a3b8" }}>✕</td>
                 <td style={{ textAlign: "center", color: "#94a3b8" }}>✕</td>
                 <td className="highlight" style={{ textAlign: "center", color: "#16a34a", fontSize: "1.25rem" }}>✓</td>
