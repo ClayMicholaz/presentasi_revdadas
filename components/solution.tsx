@@ -24,8 +24,11 @@ export default function Solution() {
           </div>
           <div className="pill support">
             <h3>PENDUKUNG — Revenue Forecasting</h3>
-            <p>Prediksi AI</p>
-            <p>Proyeksi revenue 6–24 bulan</p>
+            <p>Prediksi AI berbasis historical pattern</p>
+            <p>Proyeksi revenue 6–24 bulan untuk perencanaan APBD</p>
+            <p style={{ fontSize: '0.85rem', marginTop: '0.5rem', fontStyle: 'italic', opacity: '0.9' }}>
+              Note: Forecasting sebagai reference, bukan untuk keputusan audit
+            </p>
           </div>
         </div>
         

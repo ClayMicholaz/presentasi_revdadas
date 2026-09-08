@@ -36,6 +36,7 @@ export default function Demo() {
         
         <div style={{ textAlign: 'center', marginTop: '2rem' }}>
           <p style={{ fontSize: '0.9rem', color: '#cbd5e1' }}>8 Provinsi Tervalidasi · 14 Komponen APBD · Data DJPK 2023–2025</p>
+          <p style={{ fontSize: '0.85rem', color: '#94a3b8', marginTop: '0.5rem' }}>Export: Excel, Word, PDF (editable untuk laporan audit)</p>
         </div>
       </div>
       

@@ -13,7 +13,7 @@ export default function Value() {
         <div className="two-column" style={{ marginTop: '2rem' }}>
           <div>
             <h3>Pipeline AI</h3>
-            <p style={{ fontSize: '0.9rem', lineHeight: '1.8' }}>
+            <p style={{ fontSize: '1.05rem', lineHeight: '1.8' }}>
               <strong>1. Data Cleaning</strong><br/>
               • Pembersihan data otomatis: hapus duplikat &amp; koreksi lonjakan semu<br/>
               • &gt;1.000 baris data cacat dihapus<br/><br/>
@@ -76,19 +76,6 @@ export default function Value() {
                 Human Oversight: RevDadas adalah decision support tool — anomali memerlukan konfirmasi audit manual aparatur Bapenda.
               </p>
             </div>
-          </div>
-        </div>
-        
-        <div style={{ marginTop: '2rem', textAlign: 'center' }}>
-          <h3>Tech Stack</h3>
-          <div className="badges" style={{ marginTop: '1rem' }}>
-            <span className="badge">Python</span>
-            <span className="badge">scikit-learn</span>
-            <span className="badge">Prophet</span>
-            <span className="badge">Next.js 16</span>
-            <span className="badge">React 19</span>
-            <span className="badge">TypeScript</span>
-            <span className="badge">Vercel</span>
           </div>
         </div>
       </div>
