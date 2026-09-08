@@ -6,41 +6,90 @@ export default function Problem1() {
         <span>Problem Statement</span>
       </div>
       
-      <div className="slide-content">
-        <h1>Anomali Fiskal Tidak Terdeteksi — Sampai Terlambat</h1>
-        <h2>7.006 kelemahan sistem pengawasan ditemukan BPK. Satu penyebab utama: rekonsiliasi manual yang lambat.</h2>
+      <div className="slide-content" style={{ paddingTop: '3rem' }}>
+        <h1>Anomali fiskal Bapenda tidak terdeteksi — sampai terlambat.</h1>
+        <h2>7.006 Kelemahan. Satu Penyebab: Rekonsiliasi Manual yang Memakan Waktu 30 Hari.</h2>
         
-        <div className="split-layout">
+        <div className="split-layout" style={{ display: 'grid', gridTemplateColumns: '1fr 1.5fr', gap: '3rem', marginTop: '2.5rem', alignItems: 'start' }}>
           <div className="left">
-            <div className="big-number" style={{ color: '#dc2626', background: '#fee2e2', padding: '1.5rem', borderRadius: '0.75rem' }}>7.006</div>
-            <p className="label" style={{ fontSize: '0.875rem', color: '#6b7280', marginTop: '1rem' }}>
-              Kelemahan SPI — BPK RI IHPS I/2023
-            </p>
+            <div style={{ textAlign: 'center' }}>
+              <div className="big-number" style={{ 
+                color: '#dc2626', 
+                background: '#fee2e2', 
+                padding: '1.5rem', 
+                borderRadius: '0.75rem', 
+                fontSize: '4rem',
+                fontWeight: 'bold',
+                lineHeight: '1'
+              }}>
+                7.006
+              </div>
+              <p style={{ 
+                fontSize: '0.95rem', 
+                color: '#1e293b', 
+                marginTop: '1.25rem',
+                fontWeight: '600',
+                lineHeight: '1.6'
+              }}>
+                Temuan Kelemahan SPI oleh BPK RI<br/>
+                (IHPS I/2023) di 705 entitas pemerintah
+              </p>
+            </div>
           </div>
           
-          <div className="right timeline">
-            <div className="timeline-item">
-              <strong>Awal Periode</strong>
-              <p>Data self-assessment masuk</p>
+          <div className="right timeline" style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+            <div className="timeline-item" style={{ 
+              background: '#eff6ff', 
+              padding: '1.25rem', 
+              borderRadius: '0.5rem',
+              border: '2px solid #3b82f6'
+            }}>
+              <strong style={{ fontSize: '1rem', color: '#1e40af' }}>Awal Periode</strong>
+              <p style={{ marginTop: '0.5rem', fontSize: '0.9rem' }}>Data self-assessment masuk</p>
             </div>
-            <div className="timeline-item alert">
-              <strong>Hari 1–30</strong>
-              <p>Rekonsiliasi manual</p>
+            
+            <div style={{ textAlign: 'center', margin: '-0.5rem 0' }}>
+              <span style={{ fontSize: '1.5rem', color: '#64748b' }}>↓</span>
             </div>
-            <div className="timeline-item failed">
-              <strong>Hari 30+</strong>
-              <p>Anomali terdeteksi... tapi anggaran sudah terkunci</p>
+            
+            <div className="timeline-item alert" style={{ 
+              background: '#fef3c7', 
+              padding: '1.25rem', 
+              borderRadius: '0.5rem', 
+              border: '2px solid #f59e0b' 
+            }}>
+              <strong style={{ fontSize: '1rem', color: '#92400e' }}>Hari 1–30</strong>
+              <p style={{ marginTop: '0.5rem', fontSize: '0.9rem' }}>
+                <strong>Rekonsiliasi manual</strong> — validasi data PAD secara manual
+              </p>
+            </div>
+            
+            <div style={{ textAlign: 'center', margin: '-0.5rem 0' }}>
+              <span style={{ fontSize: '1.5rem', color: '#64748b' }}>↓</span>
+            </div>
+            
+            <div className="timeline-item failed" style={{ 
+              background: '#fee2e2', 
+              padding: '1.25rem', 
+              borderRadius: '0.5rem', 
+              border: '3px solid #dc2626' 
+            }}>
+              <strong style={{ fontSize: '1rem', color: '#991b1b' }}>Hari 30+</strong>
+              <p style={{ marginTop: '0.5rem', fontSize: '0.9rem' }}>
+                <strong style={{ color: '#dc2626', fontSize: '1rem' }}>Anomali terdeteksi</strong><br/>
+                ...tapi anggaran sudah terkunci, terlambat untuk koreksi
+              </p>
             </div>
           </div>
         </div>
         
-        <ul className="body-points" style={{ marginTop: '2rem', maxWidth: '600px', marginLeft: 'auto', marginRight: 'auto' }}>
-          <li>705 entitas pemerintah teraudit</li>
-          <li>Rekonsiliasi manual: <strong>20–30 hari/siklus</strong></li>
-          <li>Ketika anomali ditemukan, siklus anggaran sudah terkunci</li>
-        </ul>
-        
-        <div className="evidence-callout" style={{ marginTop: '1.5rem' }}>
+        <div className="evidence-callout" style={{ 
+          marginTop: '2.5rem', 
+          fontSize: '0.75rem',
+          color: '#64748b',
+          textAlign: 'center',
+          paddingBottom: '1rem'
+        }}>
           Sumber: BPK RI IHPS I/2023 | UU No.1/2022 (HKPD)
         </div>
       </div>

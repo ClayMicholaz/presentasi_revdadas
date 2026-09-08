@@ -7,28 +7,28 @@ export default function Workflow() {
       </div>
       
       <div className="slide-content">
-        <h1>Dari Data ke Keputusan Audit: &lt;5 Menit</h1>
-        <h2>Satu workflow — dari data ke instruksi audit terfokus — dalam kurang dari 5 menit.</h2>
+        <h1>Dari Data ke Keputusan Audit: Proses Cepat</h1>
+        <h2>Satu workflow sederhana — dari buka browser sampai dapat laporan audit.</h2>
         
         <div className="workflow">
           <div className="flow-step">
             <div className="step-box">Buka Browser</div>
-            <div className="step-time">1 detik</div>
+            <div className="step-time">Langkah 1</div>
           </div>
           <div className="arrow">→</div>
           <div className="flow-step">
             <div className="step-box">Pilih Provinsi</div>
-            <div className="step-time">2 detik</div>
+            <div className="step-time">Langkah 2</div>
           </div>
           <div className="arrow">→</div>
           <div className="flow-step">
             <div className="step-box">Lihat Anomali</div>
-            <div className="step-time">Instan</div>
+            <div className="step-time">Langkah 3</div>
           </div>
           <div className="arrow">→</div>
           <div className="flow-step">
-            <div className="step-box">Export PDF</div>
-            <div className="step-time">1 klik</div>
+            <div className="step-box">Export Laporan</div>
+            <div className="step-time">Langkah 4</div>
           </div>
         </div>
         
@@ -45,17 +45,17 @@ export default function Workflow() {
               <tr>
                 <td>Waktu deteksi</td>
                 <td>20–30 hari</td>
-                <td>Langsung (&lt;2 detik)</td>
+                <td>Langsung tampil</td>
               </tr>
               <tr>
                 <td>Jenis audit</td>
                 <td>Acak, merata</td>
-                <td>Fokus ke data yang berisiko tinggi</td>
+                <td>Fokus pada data berisiko</td>
               </tr>
               <tr>
                 <td>Dokumentasi</td>
-                <td>Ketik manual di spreadsheet</td>
-                <td>PDF otomatis</td>
+                <td>Ketik manual</td>
+                <td>Export otomatis</td>
               </tr>
             </tbody>
           </table>

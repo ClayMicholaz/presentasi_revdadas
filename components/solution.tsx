@@ -10,13 +10,19 @@ export default function Solution() {
         <h1>RevDadas: Deteksi Anomali Otomatis untuk Bapenda</h1>
         <h2>RevDadas mengubah 20–30 hari rekonsiliasi menjadi deteksi anomali yang langsung muncul.</h2>
         
-        <div className="value-prop">
-          <p className="value-statement">
-            RevDadas membantu Bapenda provinsi mendeteksi anomali pencatatan PAD secara otomatis — langsung di browser, tanpa instalasi.
-          </p>
-        </div>
+        <p style={{ 
+          fontSize: '1.15rem', 
+          textAlign: 'center', 
+          maxWidth: '900px', 
+          margin: '2rem auto',
+          lineHeight: '1.7',
+          color: '#1e293b',
+          fontWeight: '500'
+        }}>
+          RevDadas membantu Bapenda provinsi mendeteksi anomali pencatatan PAD secara otomatis — langsung di browser, tanpa instalasi.
+        </p>
         
-        <div className="capability-pills">
+        <div className="capability-pills" style={{ marginTop: '2.5rem' }}>
           <div className="pill core">
             <h3>FITUR UTAMA — Deteksi Anomali</h3>
             <p>Kecerdasan Buatan</p>
@@ -32,7 +38,7 @@ export default function Solution() {
           </div>
         </div>
         
-        <div className="target-market">
+        <div className="target-market" style={{ marginTop: '2rem' }}>
           <p><strong>Target pasar:</strong> 38 Bapenda Provinsi → ekspansi 514 Kab/Kota</p>
         </div>
       </div>

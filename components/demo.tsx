@@ -7,8 +7,8 @@ export default function Demo() {
       </div>
       
       <div className="slide-content">
-        <h1>Bukan Mockup. Ini Prototipe yang Bisa Dipakai.</h1>
-        <h2>RevDadas sudah bisa diakses publik — 9 komponen berfungsi, pakai data real, belum diuji aparatur Bapenda (target: uji coba pada fase pilot).</h2>
+        <h1>Prototype yang Bisa Langsung Dicoba</h1>
+        <h2>RevDadas sudah live dan bisa diakses publik — 9 fitur lengkap dengan data real dari DJPK. Belum diuji oleh Bapenda (target: validasi dengan Bapenda pada fase pilot).</h2>
         
         <div className="badges">
           <span className="badge live">PROTOTIPE FUNGSIONAL</span>
@@ -17,20 +17,19 @@ export default function Demo() {
               revdadas.vercel.app
             </a>
           </span>
-          <span className="badge">Next.js 16 + React 19</span>
         </div>
         
         <div className="components-checklist" style={{ marginTop: '1.5rem' }}>
           <ul style={{ maxWidth: '900px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '0.75rem' }}>
             <li>KPI Cards (Revenue, Anomali, Loss, Kemandirian)</li>
-            <li>Heatmap Geospasial Indonesia</li>
-            <li>Anomaly Detection Table (IF + AI Reason)</li>
-            <li>Impact Calculator</li>
-            <li>Revenue Historical vs Forecast Chart</li>
-            <li>Proportion Chart (14 Komponen APBD)</li>
-            <li>AI Policy Recommendations</li>
-            <li>Interactive Sidebar</li>
-            <li>Export PDF Eksekutif</li>
+            <li>Peta Indonesia dengan Heatmap</li>
+            <li>Tabel Deteksi Anomali + Alasan AI</li>
+            <li>Kalkulator Dampak</li>
+            <li>Chart Historis vs Prediksi Revenue</li>
+            <li>Chart Proporsi 14 Komponen APBD</li>
+            <li>Rekomendasi Kebijakan dari AI</li>
+            <li>Sidebar Interaktif</li>
+            <li>Export Laporan PDF</li>
           </ul>
         </div>
         
