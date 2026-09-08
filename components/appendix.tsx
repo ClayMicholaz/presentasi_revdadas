@@ -51,12 +51,12 @@ export default function Appendix() {
           </div>
           
           <div style={{ marginTop: '2rem', background: '#eff6ff', padding: '1.5rem', borderRadius: '0.75rem' }}>
-            <h4 style={{ marginBottom: '1rem' }}>110 Skenario Validasi</h4>
+            <h4 style={{ marginBottom: '1rem' }}>110 Skenario Pengujian</h4>
             <p style={{ fontSize: '0.9rem' }}>
-              <strong>Kombinasi:</strong> 8 provinsi × 14 komponen × berbagai kondisi data (normal, anomali, missing values, lonjakan semu)
+              <strong>Kombinasi:</strong> 8 provinsi × 14 komponen × berbagai kondisi data (normal, tidak normal, data hilang, lonjakan palsu)
             </p>
             <p style={{ fontSize: '0.9rem', marginTop: '0.75rem' }}>
-              <strong>Quality gate:</strong> Setiap skenario melalui validasi manual untuk memastikan anomali terdeteksi dengan benar
+              <strong>Kontrol kualitas:</strong> Setiap skenario diperiksa manual untuk memastikan anomali terdeteksi dengan benar
             </p>
           </div>
         </div>
@@ -130,7 +130,7 @@ export default function Appendix() {
               <li>Moderat (10%): Rp 176,68T × 10% = <strong>Rp 17,7 T/tahun</strong></li>
             </ul>
             <p style={{ fontSize: '0.85rem', marginTop: '1rem', fontStyle: 'italic', color: '#78350f' }}>
-              <strong>Disclaimer:</strong> Recovery aktual bergantung investigasi audit. Pilot Bapenda adalah langkah validasi berikutnya.
+              <strong>Catatan:</strong> Angka aktual bergantung hasil audit lapangan. Pilot dengan Bapenda adalah langkah validasi berikutnya.
             </p>
           </div>
         </div>
@@ -152,21 +152,21 @@ export default function Appendix() {
             <h3 style={{ marginBottom: '1.5rem' }}>Fase 1: Pilot & Validasi (0-6 bulan)</h3>
             <div className="two-column" style={{ gap: '1.5rem' }}>
               <div style={{ background: 'white', padding: '1.25rem', borderRadius: '0.5rem' }}>
-                <h4>Bulan 1-3: Pilot Pertama</h4>
+                <h4>Bulan 1-3: Uji Coba Pertama</h4>
                 <ul style={{ fontSize: '0.9rem' }}>
-                  <li>MoU Bapenda DKI/Jabar (non-komersial)</li>
-                  <li>Workshop onboarding tim audit</li>
-                  <li>Pengumpulan feedback user real</li>
-                  <li><strong>KPI:</strong> 10+ feedback actionable</li>
+                  <li>Kerja sama dengan Bapenda DKI/Jabar (gratis)</li>
+                  <li>Pelatihan untuk tim audit</li>
+                  <li>Pengumpulan masukan dari pengguna</li>
+                  <li><strong>Target:</strong> 10+ masukan yang dapat ditindaklanjuti</li>
                 </ul>
               </div>
               <div style={{ background: 'white', padding: '1.25rem', borderRadius: '0.5rem' }}>
-                <h4>Bulan 3-6: Integrasi & Scale</h4>
+                <h4>Bulan 3-6: Integrasi & Perluas</h4>
                 <ul style={{ fontSize: '0.9rem' }}>
-                  <li>Integrasi API e-Pendapatan pilot</li>
-                  <li>Implementasi multi-tenancy</li>
-                  <li>Dokumentasi SOP operasional</li>
-                  <li><strong>KPI:</strong> 2 Bapenda aktif menggunakan</li>
+                  <li>Hubungkan dengan sistem e-Pendapatan</li>
+                  <li>Dukungan untuk banyak Bapenda sekaligus</li>
+                  <li>Dokumen prosedur penggunaan</li>
+                  <li><strong>Target:</strong> 2 Bapenda aktif menggunakan</li>
                 </ul>
               </div>
             </div>
@@ -176,21 +176,21 @@ export default function Appendix() {
             <h3 style={{ marginBottom: '1.5rem' }}>Fase 2: Komersialisasi (6-18 bulan)</h3>
             <div className="two-column" style={{ gap: '1.5rem' }}>
               <div style={{ background: 'white', padding: '1.25rem', borderRadius: '0.5rem' }}>
-                <h4>Bulan 6-12: SaaS B2G Launch</h4>
+                <h4>Bulan 6-12: Layanan Berbayar</h4>
                 <ul style={{ fontSize: '0.9rem' }}>
-                  <li>Pricing model: Rp 15-25 jt/bulan</li>
-                  <li>e-Katalog LKPP submission</li>
-                  <li>3-5 Bapenda paying customer</li>
-                  <li><strong>KPI:</strong> Rp 200-400 jt ARR</li>
+                  <li>Harga: Rp 15-25 jt/bulan</li>
+                  <li>Daftar ke katalog pengadaan pemerintah</li>
+                  <li>3-5 Bapenda pelanggan berbayar</li>
+                  <li><strong>Target:</strong> Rp 200-400 jt pendapatan/tahun</li>
                 </ul>
               </div>
               <div style={{ background: 'white', padding: '1.25rem', borderRadius: '0.5rem' }}>
-                <h4>Bulan 12-18: Ekspansi</h4>
+                <h4>Bulan 12-18: Perluas Pasar</h4>
                 <ul style={{ fontSize: '0.9rem' }}>
-                  <li>Ekspansi ke 10+ provinsi</li>
-                  <li>Partnership SI pemerintah</li>
-                  <li>Pilot Kab/Kota (tier 2)</li>
-                  <li><strong>KPI:</strong> 15+ customer aktif</li>
+                  <li>Perluas ke 10+ provinsi</li>
+                  <li>Kerja sama dengan integrator pemerintah</li>
+                  <li>Uji coba untuk Kab/Kota</li>
+                  <li><strong>Target:</strong> 15+ pelanggan aktif</li>
                 </ul>
               </div>
             </div>

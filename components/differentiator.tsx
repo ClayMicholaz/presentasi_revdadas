@@ -7,10 +7,9 @@ export default function Differentiator() {
       </div>
 
       <div className="slide-content" style={{ maxWidth: "1100px" }}>
-        <h1 style={{ marginBottom: "0.75rem" }}>Kenapa Bukan yang Lain?</h1>
+        <h1 style={{ marginBottom: "0.75rem" }}>Kenapa Tidak Pakai Cara Lain?</h1>
         <h2 style={{ marginBottom: "1.25rem" }}>
-          Alternatif yang ada tidak dibangun untuk anomaly detection fiskal
-          daerah Indonesia.
+          Cara lain (spreadsheet manual atau dashboard BI umum) tidak dibangun khusus untuk deteksi anomali fiskal daerah Indonesia.
         </h2>
 
         <div className="comparison-table" style={{ marginBottom: "1.5rem" }}>
@@ -25,19 +24,19 @@ export default function Differentiator() {
             </thead>
             <tbody>
               <tr>
-                <td>Anomaly Detection Otomatis</td>
+                <td>Deteksi Anomali Otomatis</td>
                 <td>Tidak</td>
                 <td>Tidak</td>
                 <td className="highlight">Ya</td>
               </tr>
               <tr>
-                <td>Data Fiskal Daerah (DJPK)</td>
+                <td>Pakai Data Resmi Kemenkeu (DJPK)</td>
                 <td>Parsial</td>
                 <td>Tidak</td>
                 <td className="highlight">Ya</td>
               </tr>
               <tr>
-                <td>Bahasa Indonesia + Konteks Pemda</td>
+                <td>Bahasa Indonesia + Konteks Pemerintah Daerah</td>
                 <td>Tidak</td>
                 <td>Tidak</td>
                 <td className="highlight">Ya</td>
@@ -74,7 +73,7 @@ export default function Differentiator() {
               textAlign: "center",
             }}
           >
-            Competitive Moat
+            Keunggulan yang Sulit Ditiru
           </h3>
           <div className="moat-grid" style={{ display: "grid", gap: "1rem" }}>
             <div
@@ -92,10 +91,10 @@ export default function Differentiator() {
                   marginBottom: "0.5rem",
                 }}
               >
-                Precomputed Architecture
+                Dashboard Muncul Langsung
               </strong>
               <p style={{ fontSize: "0.8125rem", margin: 0 }}>
-                Kompetitor on-demand butuh backend mahal
+                Kompetitor lain butuh server mahal dan loading lama
               </p>
             </div>
             <div
@@ -113,10 +112,10 @@ export default function Differentiator() {
                   marginBottom: "0.5rem",
                 }}
               >
-                Data DJPK Resmi
+                Data Resmi Kemenkeu
               </strong>
               <p style={{ fontSize: "0.8125rem", margin: 0 }}>
-                Bukan sintetis, institutional trust tinggi
+                Pakai data asli dari DJPK, bukan data tiruan
               </p>
             </div>
             <div
@@ -134,10 +133,10 @@ export default function Differentiator() {
                   marginBottom: "0.5rem",
                 }}
               >
-                Open Source MIT
+                Kode Bisa Diperiksa
               </strong>
               <p style={{ fontSize: "0.8125rem", margin: 0 }}>
-                Pemerintah bisa audit kode, tidak ada black box
+                Pemerintah bisa audit kode program, tidak ada yang disembunyikan
               </p>
             </div>
           </div>
