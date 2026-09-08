@@ -21,7 +21,7 @@ export default function Home() {
     const container = containerRef.current;
     if (!container) return;
 
-    const isMobile = () => window.innerWidth <= 640;
+    const isMobile = () => window.innerWidth <= 1024;
 
     const handleWheel = (event: WheelEvent) => {
       if (isScrolling.current || Math.abs(event.deltaY) < 2) {
@@ -32,31 +32,38 @@ export default function Home() {
       const sections = Array.from(container.querySelectorAll(".section"));
       const scrollTop = container.scrollTop;
       const viewportHeight = container.clientHeight;
-      
+
       let currentIndex = 0;
       for (let i = 0; i < sections.length; i++) {
         const section = sections[i] as HTMLElement;
         const sectionTop = section.offsetTop;
         const viewportMiddle = scrollTop + viewportHeight / 2;
-        
-        if (viewportMiddle >= sectionTop && viewportMiddle < sectionTop + section.offsetHeight) {
+
+        if (
+          viewportMiddle >= sectionTop &&
+          viewportMiddle < sectionTop + section.offsetHeight
+        ) {
           currentIndex = i;
           break;
         }
       }
-      
+
       const currentSection = sections[currentIndex] as HTMLElement;
 
       if (isMobile()) {
         const sectionScrollHeight = currentSection.scrollHeight;
         const sectionClientHeight = currentSection.clientHeight;
         const sectionScrollTop = currentSection.scrollTop;
-        
+
         if (sectionScrollHeight > sectionClientHeight) {
           const isAtTop = sectionScrollTop <= 1;
-          const isAtBottom = sectionScrollTop + sectionClientHeight >= sectionScrollHeight - 1;
+          const isAtBottom =
+            sectionScrollTop + sectionClientHeight >= sectionScrollHeight - 1;
 
-          if ((event.deltaY < 0 && !isAtTop) || (event.deltaY > 0 && !isAtBottom)) {
+          if (
+            (event.deltaY < 0 && !isAtTop) ||
+            (event.deltaY > 0 && !isAtBottom)
+          ) {
             return;
           }
         }

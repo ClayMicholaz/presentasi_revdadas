@@ -86,6 +86,7 @@ body {
   height: 100svh;
   max-height: 100svh;
   overflow: hidden;
+  scrollbar-gutter: stable;
   padding: clamp(5rem, 8vh, 6.5rem) clamp(1rem, 5vw, 4rem)
     clamp(4rem, 7vh, 5rem);
   scroll-snap-align: start;
@@ -550,6 +551,8 @@ body {
 
 .before-after {
   margin: 2rem 0;
+  max-width: 100%;
+  overflow-x: auto;
 }
 
 .capability-pills {
@@ -980,6 +983,11 @@ body {
   }
 
   .section {
+    height: 100svh;
+    min-height: 100svh;
+    max-height: 100svh;
+    overflow-y: auto;
+    justify-content: flex-start;
     padding: 5rem 2rem 4rem 2rem;
   }
 
@@ -994,17 +1002,19 @@ body {
 
 @media (max-width: 640px) {
   .section {
-    height: auto;
+    height: 100svh;
     min-height: 100svh;
-    max-height: none;
+    max-height: 100svh;
     overflow-y: auto;
+    justify-content: flex-start;
     padding: 4rem 1.25rem 3rem 1.25rem;
     scroll-snap-align: start;
   }
 
   .section.scrollable {
-    height: auto;
+    height: 100svh;
     min-height: 100svh;
+    max-height: 100svh;
   }
 
   .section h1 {
@@ -1079,6 +1089,14 @@ body {
   .comparison-table table {
     min-width: 34rem;
     font-size: 0.7rem;
+  }
+
+  .before-after table {
+    min-width: 34rem;
+  }
+
+  .section-value ul[style*="columns"] {
+    columns: 1 !important;
   }
 
   .comparison-table th,
