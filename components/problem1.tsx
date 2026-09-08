@@ -7,8 +7,8 @@ export default function Problem1() {
       </div>
       
       <div className="slide-content">
-        <h1>7.006 Kelemahan. Satu Penyebab.</h1>
-        <h2>Anomali fiskal Bapenda tidak terdeteksi — sampai terlambat.</h2>
+        <h1>Anomali fiskal Bapenda tidak terdeteksi — sampai terlambat.</h1>
+        <h2>7.006 Kelemahan. Satu Penyebab.</h2>
         
         <div className="split-layout">
           <div className="left">
