@@ -6,137 +6,140 @@ export default function Differentiator() {
         <span>Competitive Advantage</span>
       </div>
 
-      <div className="slide-content" style={{ maxWidth: "1100px" }}>
+      <div className="slide-content" style={{ maxWidth: "1100px", margin: "0 auto" }}>
         <h1 style={{ marginBottom: "0.75rem" }}>Kenapa Tidak Pakai Cara Lain?</h1>
-        <h2 style={{ marginBottom: "1.25rem" }}>
+        <h2 style={{ marginBottom: "1.5rem" }}>
           Cara lain (spreadsheet manual atau dashboard BI umum) tidak dibangun khusus untuk deteksi anomali fiskal daerah Indonesia.
         </h2>
 
-        <div className="comparison-table" style={{ marginBottom: "1.5rem" }}>
-          <table style={{ fontSize: "0.875rem" }}>
+        <div className="comparison-table" style={{ marginBottom: "2rem" }}>
+          <table style={{ fontSize: "0.9rem", width: "100%" }}>
             <thead>
               <tr>
-                <th>Dimensi</th>
-                <th>Spreadsheet Manual</th>
-                <th>Dashboard BI Umum</th>
-                <th className="highlight">RevDadas</th>
+                <th style={{ textAlign: "left" }}>Dimensi</th>
+                <th style={{ textAlign: "center" }}>Spreadsheet Manual</th>
+                <th style={{ textAlign: "center" }}>Dashboard BI Umum</th>
+                <th className="highlight" style={{ textAlign: "center" }}>RevDadas</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>Deteksi Anomali Otomatis</td>
-                <td>Tidak</td>
-                <td>Tidak</td>
-                <td className="highlight">Ya</td>
+                <td style={{ textAlign: "center", color: "#94a3b8" }}>✕</td>
+                <td style={{ textAlign: "center", color: "#94a3b8" }}>✕</td>
+                <td className="highlight" style={{ textAlign: "center", color: "#16a34a", fontSize: "1.25rem" }}>✓</td>
               </tr>
               <tr>
                 <td>Pakai Data Resmi Kemenkeu (DJPK)</td>
-                <td>Parsial</td>
-                <td>Tidak</td>
-                <td className="highlight">Ya</td>
+                <td style={{ textAlign: "center", color: "#64748b", fontSize: "0.85rem" }}>Parsial</td>
+                <td style={{ textAlign: "center", color: "#94a3b8" }}>✕</td>
+                <td className="highlight" style={{ textAlign: "center", color: "#16a34a", fontSize: "1.25rem" }}>✓</td>
               </tr>
               <tr>
-                <td>Bahasa Indonesia + Konteks Pemerintah Daerah</td>
-                <td>Tidak</td>
-                <td>Tidak</td>
-                <td className="highlight">Ya</td>
+                <td>Bahasa Indonesia + Konteks Pemda</td>
+                <td style={{ textAlign: "center", color: "#94a3b8" }}>✕</td>
+                <td style={{ textAlign: "center", color: "#94a3b8" }}>✕</td>
+                <td className="highlight" style={{ textAlign: "center", color: "#16a34a", fontSize: "1.25rem" }}>✓</td>
               </tr>
               <tr>
                 <td>Dashboard Muncul Langsung</td>
-                <td>Tidak</td>
-                <td>Tidak</td>
-                <td className="highlight">Ya</td>
+                <td style={{ textAlign: "center", color: "#94a3b8" }}>✕</td>
+                <td style={{ textAlign: "center", color: "#94a3b8" }}>✕</td>
+                <td className="highlight" style={{ textAlign: "center", color: "#16a34a", fontSize: "1.25rem" }}>✓</td>
               </tr>
               <tr>
                 <td>Open Source (dapat diaudit)</td>
-                <td>Tidak</td>
-                <td>Tidak</td>
-                <td className="highlight">Ya</td>
+                <td style={{ textAlign: "center", color: "#94a3b8" }}>✕</td>
+                <td style={{ textAlign: "center", color: "#94a3b8" }}>✕</td>
+                <td className="highlight" style={{ textAlign: "center", color: "#16a34a", fontSize: "1.25rem" }}>✓</td>
               </tr>
               <tr>
                 <td>Biaya server backend</td>
-                <td>—</td>
-                <td>Mahal</td>
-                <td className="highlight">
-                  <strong>Nol</strong>
+                <td style={{ textAlign: "center", color: "#64748b" }}>—</td>
+                <td style={{ textAlign: "center", color: "#dc2626" }}>Mahal</td>
+                <td className="highlight" style={{ textAlign: "center" }}>
+                  <strong style={{ color: "#16a34a" }}>Nol</strong>
                 </td>
               </tr>
             </tbody>
           </table>
         </div>
 
-        <div style={{ marginTop: "1rem" }}>
+        <div style={{ marginTop: "2rem" }}>
           <h3
             style={{
               fontSize: "1.125rem",
-              marginBottom: "0.875rem",
+              marginBottom: "1.25rem",
               textAlign: "center",
             }}
           >
-            Keunggulan yang Sulit Ditiru
+            Defensibility / Competitive Moat
           </h3>
-          <div className="moat-grid" style={{ display: "grid", gap: "1rem" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "1.25rem" }}>
             <div
               style={{
                 background: "white",
-                padding: "1rem",
+                padding: "1.25rem",
                 borderRadius: "0.5rem",
-                boxShadow: "0 1px 3px rgba(0,0,0,0.1)",
+                boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
               }}
             >
               <strong
                 style={{
-                  fontSize: "0.9rem",
+                  fontSize: "0.95rem",
                   display: "block",
-                  marginBottom: "0.5rem",
+                  marginBottom: "0.75rem",
+                  color: "#1e40af",
                 }}
               >
-                Dashboard Muncul Langsung
+                Domain-Specific Logic
               </strong>
-              <p style={{ fontSize: "0.8125rem", margin: 0 }}>
-                Kompetitor lain butuh server mahal dan loading lama
+              <p style={{ fontSize: "0.85rem", margin: 0, lineHeight: "1.6" }}>
+                Disesuaikan langsung dengan regulasi UU HKPD & format data DJPK — bukan dashboard generic
               </p>
             </div>
             <div
               style={{
                 background: "white",
-                padding: "1rem",
+                padding: "1.25rem",
                 borderRadius: "0.5rem",
-                boxShadow: "0 1px 3px rgba(0,0,0,0.1)",
+                boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
               }}
             >
               <strong
                 style={{
-                  fontSize: "0.9rem",
+                  fontSize: "0.95rem",
                   display: "block",
-                  marginBottom: "0.5rem",
+                  marginBottom: "0.75rem",
+                  color: "#1e40af",
                 }}
               >
-                Data Resmi Kemenkeu
+                Zero-Infrastructure Cost
               </strong>
-              <p style={{ fontSize: "0.8125rem", margin: 0 }}>
-                Pakai data asli dari DJPK, bukan data tiruan
+              <p style={{ fontSize: "0.85rem", margin: 0, lineHeight: "1.6" }}>
+                Berjalan langsung di browser tanpa beban server mahal bagi pemda
               </p>
             </div>
             <div
               style={{
                 background: "white",
-                padding: "1rem",
+                padding: "1.25rem",
                 borderRadius: "0.5rem",
-                boxShadow: "0 1px 3px rgba(0,0,0,0.1)",
+                boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
               }}
             >
               <strong
                 style={{
-                  fontSize: "0.9rem",
+                  fontSize: "0.95rem",
                   display: "block",
-                  marginBottom: "0.5rem",
+                  marginBottom: "0.75rem",
+                  color: "#1e40af",
                 }}
               >
-                Kode Bisa Diperiksa
+                Audit Readiness (Transparency)
               </strong>
-              <p style={{ fontSize: "0.8125rem", margin: 0 }}>
-                Pemerintah bisa audit kode program, tidak ada yang disembunyikan
+              <p style={{ fontSize: "0.85rem", margin: 0, lineHeight: "1.6" }}>
+                Kode & algoritma transparan (explainable) — syarat mutlak sistem audit pemerintah
               </p>
             </div>
           </div>

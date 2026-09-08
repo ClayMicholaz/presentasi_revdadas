@@ -1,150 +1,127 @@
 export default function Closing() {
   return (
-    <section className="section section-closing scrollable">
+    <section className="section section-closing">
       <div className="section-meta" aria-hidden="true">
         <span>9</span>
         <span>Team & Closing</span>
       </div>
 
-      <div className="slide-content">
-        <h1 style={{ color: "white", marginBottom: "2rem" }}>
+      <div className="slide-content" style={{ paddingTop: "2.5rem" }}>
+        <h1 style={{ color: "white", marginBottom: "1.5rem" }}>
           Layak Dipercaya. Layak Dilanjutkan.
         </h1>
-        <h2 style={{ color: "rgba(255,255,255,0.9)", marginBottom: "3rem" }}>
-          Problem nyata + prototype fungsional + AI tervalidasi + team yang bisa
-          eksekusi.
+        <h2 style={{ color: "rgba(255,255,255,0.9)", marginBottom: "2.5rem" }}>
+          Problem nyata + prototype fungsional + teknologi teruji + team yang bisa eksekusi.
         </h2>
 
-        <div className="evidence-pills">
-          <div className="evidence-pill">
-            <h3 style={{ color: "white" }}>Problem Tervalidasi</h3>
-            <p style={{ fontSize: "0.875rem" }}>
-              BPK: 7.006 SPI weaknesses · UU HKPD 2022 · 20–30 hari audit manual
+        <div className="evidence-pills" style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: "1.25rem", marginBottom: "2.5rem" }}>
+          <div
+            style={{
+              background: "rgba(255,255,255,0.15)",
+              padding: "1.5rem 1.25rem",
+              borderRadius: "0.5rem",
+              backdropFilter: "blur(10px)",
+            }}
+          >
+            <h3 style={{ color: "white", marginBottom: "0.75rem", fontSize: "1rem" }}>Problem Tervalidasi</h3>
+            <p style={{ fontSize: "0.9rem", color: "rgba(255,255,255,0.95)" }}>
+              <strong style={{ fontSize: "1.25rem", color: "#fbbf24" }}>7.006</strong> kelemahan SPI (BPK)
+            </p>
+            <p style={{ fontSize: "0.85rem", color: "rgba(255,255,255,0.85)", marginTop: "0.5rem" }}>
+              UU HKPD 2022 · 20–30 hari audit manual
             </p>
           </div>
-          <div className="evidence-pill">
-            <h3 style={{ color: "white" }}>Prototype Live</h3>
-            <p style={{ fontSize: "0.875rem" }}>
+          <div
+            style={{
+              background: "rgba(255,255,255,0.15)",
+              padding: "1.5rem 1.25rem",
+              borderRadius: "0.5rem",
+              backdropFilter: "blur(10px)",
+            }}
+          >
+            <h3 style={{ color: "white", marginBottom: "0.75rem", fontSize: "1rem" }}>Prototype Live</h3>
+            <p style={{ fontSize: "0.9rem" }}>
               <a
                 href="https://revdadas.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{ color: "#fbbf24" }}
+                style={{ color: "#fbbf24", textDecoration: "underline" }}
               >
                 revdadas.vercel.app
-              </a>{" "}
-              · &lt;2 detik · 9 komponen fungsional
+              </a>
+            </p>
+            <p style={{ fontSize: "0.85rem", color: "rgba(255,255,255,0.85)", marginTop: "0.5rem" }}>
+              <strong>&lt;2 detik</strong> · 9 komponen fungsional
             </p>
           </div>
-          <div className="evidence-pill">
-            <h3 style={{ color: "white" }}>Teknologi Teruji</h3>
-            <p style={{ fontSize: "0.875rem" }}>
-              AI yang sudah diuji dengan 110 skenario data nyata
+          <div
+            style={{
+              background: "rgba(255,255,255,0.15)",
+              padding: "1.5rem 1.25rem",
+              borderRadius: "0.5rem",
+              backdropFilter: "blur(10px)",
+            }}
+          >
+            <h3 style={{ color: "white", marginBottom: "0.75rem", fontSize: "1rem" }}>Teknologi Teruji</h3>
+            <p style={{ fontSize: "0.9rem", color: "rgba(255,255,255,0.95)" }}>
+              <strong style={{ fontSize: "1.25rem", color: "#fbbf24" }}>110</strong> skenario
+            </p>
+            <p style={{ fontSize: "0.85rem", color: "rgba(255,255,255,0.85)", marginTop: "0.5rem" }}>
+              AI tervalidasi data nyata
             </p>
           </div>
-          <div className="evidence-pill">
-            <h3 style={{ color: "white" }}>Team Siap</h3>
-            <p style={{ fontSize: "0.875rem" }}>
-              4 orang · ownership jelas · 10 iterasi improvement
+          <div
+            style={{
+              background: "rgba(255,255,255,0.15)",
+              padding: "1.5rem 1.25rem",
+              borderRadius: "0.5rem",
+              backdropFilter: "blur(10px)",
+            }}
+          >
+            <h3 style={{ color: "white", marginBottom: "0.75rem", fontSize: "1rem" }}>Team Siap</h3>
+            <p style={{ fontSize: "0.9rem", color: "rgba(255,255,255,0.95)" }}>
+              <strong>4</strong> orang · ownership jelas
+            </p>
+            <p style={{ fontSize: "0.85rem", color: "rgba(255,255,255,0.85)", marginTop: "0.5rem" }}>
+              10 iterasi improvement
             </p>
           </div>
         </div>
 
-        <div className="tagline-large" style={{ color: "white" }}>
-          <p>
-            <em>
-              &quot;Dari data APBD ke keputusan audit — dalam hitungan
-              detik.&quot;
-            </em>
+        <div style={{ textAlign: "center", margin: "2rem 0", padding: "1.5rem 0" }}>
+          <p style={{ fontSize: "1.35rem", color: "#fbbf24", fontStyle: "italic", fontWeight: "500" }}>
+            &quot;Dari data APBD ke keputusan audit — dalam hitungan detik.&quot;
           </p>
         </div>
 
-        <div style={{ marginTop: "3rem" }}>
-          <h3 style={{ color: "white", marginBottom: "1.5rem" }}>
-            Market & Roadmap
-          </h3>
-          <div className="three-panel" style={{ marginBottom: "2rem" }}>
-            <div
-              style={{
-                background: "rgba(255,255,255,0.1)",
-                padding: "1.5rem",
-                borderRadius: "0.75rem",
-              }}
-            >
-              <h4 style={{ color: "white", marginBottom: "0.75rem" }}>
-                Market Size
-              </h4>
-              <p style={{ fontSize: "0.875rem" }}>
-                <strong>Primary:</strong> 38 Bapenda Provinsi
-              </p>
-              <p style={{ fontSize: "0.875rem" }}>
-                <strong>Expansion:</strong> 514 Kab/Kota
-              </p>
-            </div>
-            <div
-              style={{
-                background: "rgba(255,255,255,0.1)",
-                padding: "1.5rem",
-                borderRadius: "0.75rem",
-              }}
-            >
-              <h4 style={{ color: "white", marginBottom: "0.75rem" }}>
-                Fase 1 (0-6 bln)
-              </h4>
-              <p style={{ fontSize: "0.875rem" }}>Uji coba gratis dengan Bapenda</p>
-              <p style={{ fontSize: "0.875rem" }}>Target: DKI Jakarta / Jawa Barat</p>
-              <p style={{ fontSize: "0.875rem" }}>Tidak ada biaya untuk pemda</p>
-              <p style={{ fontSize: "0.75rem", marginTop: "0.5rem", fontStyle: "italic", opacity: "0.9" }}>
-                Validasi berikutnya: demo ke Bapenda melalui jaringan UBM & PIDI
-              </p>
-            </div>
-            <div
-              style={{
-                background: "rgba(255,255,255,0.1)",
-                padding: "1.5rem",
-                borderRadius: "0.75rem",
-              }}
-            >
-              <h4 style={{ color: "white", marginBottom: "0.75rem" }}>
-                Fase 2 (6-18 bln)
-              </h4>
-              <p style={{ fontSize: "0.875rem" }}>Layanan berbayar: Rp 15-25 jt/bln</p>
-              <p style={{ fontSize: "0.875rem" }}>Masuk katalog pengadaan pemerintah</p>
-              <p style={{ fontSize: "0.875rem" }}>Balik modal dalam 6-8 bulan</p>
-            </div>
-          </div>
-        </div>
-
-        <div style={{ marginTop: "3rem" }}>
+        <div style={{ marginTop: "2.5rem" }}>
           <h3
             style={{
-              marginBottom: "1.5rem",
+              marginBottom: "1.25rem",
               fontSize: "0.875rem",
               letterSpacing: "0.1em",
               textTransform: "uppercase",
               color: "rgba(245, 240, 223, 0.7)",
+              textAlign: "center",
             }}
           >
-            Team & Ownership
+            The Team
           </h3>
-          <h2
-            style={{
-              color: "#f5f0df",
-              marginBottom: "2rem",
-              fontSize: "clamp(1.5rem, 3vw, 2.25rem)",
-            }}
-          >
-            Tim RevDadas
-          </h2>
 
           <div
-            className="team-grid-inline"
-            style={{ display: "grid", gap: "1.5rem", marginBottom: "2rem" }}
+            style={{ 
+              display: "grid", 
+              gridTemplateColumns: "repeat(4, 1fr)", 
+              gap: "1.25rem", 
+              marginBottom: "1.5rem",
+              maxWidth: "1000px",
+              margin: "0 auto 1.5rem"
+            }}
           >
             <div
               style={{
                 background: "white",
-                padding: "1.75rem 1.25rem",
+                padding: "1.5rem 1rem",
                 borderRadius: "0.5rem",
                 textAlign: "center",
                 boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
@@ -152,7 +129,7 @@ export default function Closing() {
             >
               <h3
                 style={{
-                  fontSize: "1rem",
+                  fontSize: "0.95rem",
                   fontWeight: "600",
                   color: "#1e293b",
                   marginBottom: "0.5rem",
@@ -162,9 +139,9 @@ export default function Closing() {
               </h3>
               <p
                 style={{
-                  fontSize: "0.875rem",
+                  fontSize: "0.85rem",
                   fontWeight: "600",
-                  color: "#475569",
+                  color: "#64748b",
                 }}
               >
                 Team Lead
@@ -174,7 +151,7 @@ export default function Closing() {
             <div
               style={{
                 background: "white",
-                padding: "1.75rem 1.25rem",
+                padding: "1.5rem 1rem",
                 borderRadius: "0.5rem",
                 textAlign: "center",
                 boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
@@ -182,7 +159,7 @@ export default function Closing() {
             >
               <h3
                 style={{
-                  fontSize: "1rem",
+                  fontSize: "0.95rem",
                   fontWeight: "600",
                   color: "#1e293b",
                   marginBottom: "0.5rem",
@@ -192,9 +169,9 @@ export default function Closing() {
               </h3>
               <p
                 style={{
-                  fontSize: "0.875rem",
+                  fontSize: "0.85rem",
                   fontWeight: "600",
-                  color: "#475569",
+                  color: "#64748b",
                 }}
               >
                 Product/UX Lead
@@ -204,7 +181,7 @@ export default function Closing() {
             <div
               style={{
                 background: "white",
-                padding: "1.75rem 1.25rem",
+                padding: "1.5rem 1rem",
                 borderRadius: "0.5rem",
                 textAlign: "center",
                 boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
@@ -212,7 +189,7 @@ export default function Closing() {
             >
               <h3
                 style={{
-                  fontSize: "1rem",
+                  fontSize: "0.95rem",
                   fontWeight: "600",
                   color: "#1e293b",
                   marginBottom: "0.5rem",
@@ -222,9 +199,9 @@ export default function Closing() {
               </h3>
               <p
                 style={{
-                  fontSize: "0.875rem",
+                  fontSize: "0.85rem",
                   fontWeight: "600",
-                  color: "#475569",
+                  color: "#64748b",
                 }}
               >
                 Tech/AI Lead
@@ -234,7 +211,7 @@ export default function Closing() {
             <div
               style={{
                 background: "white",
-                padding: "1.75rem 1.25rem",
+                padding: "1.5rem 1rem",
                 borderRadius: "0.5rem",
                 textAlign: "center",
                 boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
@@ -242,7 +219,7 @@ export default function Closing() {
             >
               <h3
                 style={{
-                  fontSize: "1rem",
+                  fontSize: "0.95rem",
                   fontWeight: "600",
                   color: "#1e293b",
                   marginBottom: "0.5rem",
@@ -252,9 +229,9 @@ export default function Closing() {
               </h3>
               <p
                 style={{
-                  fontSize: "0.875rem",
+                  fontSize: "0.85rem",
                   fontWeight: "600",
-                  color: "#475569",
+                  color: "#64748b",
                 }}
               >
                 Business/Domain Lead
@@ -262,57 +239,61 @@ export default function Closing() {
             </div>
           </div>
 
+          <div style={{ textAlign: "center", marginTop: "1.5rem" }}>
+            <p style={{ fontSize: "1.05rem", marginBottom: "0.5rem" }}>
+              <a
+                href="https://revdadas.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: "#fbbf24", fontWeight: "600" }}
+              >
+                revdadas.vercel.app
+              </a>
+            </p>
+            <p style={{ fontSize: "0.9rem", color: "rgba(255,255,255,0.8)" }}>
+              <a
+                href="https://github.com/KwikAndreas/revdadas"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: "rgba(255,255,255,0.8)" }}
+              >
+                github.com/KwikAndreas/revdadas
+              </a>
+            </p>
+          </div>
+
           <div
             style={{
-              background: "rgba(254, 243, 199, 0.2)",
-              border: "1px solid rgba(254, 243, 199, 0.3)",
+              background: "rgba(254, 243, 199, 0.15)",
+              border: "1px solid rgba(254, 243, 199, 0.25)",
               borderRadius: "0.5rem",
-              padding: "1rem",
-              marginTop: "2rem",
+              padding: "1rem 1.25rem",
+              marginTop: "1.5rem",
+              maxWidth: "1000px",
+              margin: "1.5rem auto 0",
             }}
           >
             <p
               style={{
-                fontSize: "0.8125rem",
+                fontSize: "0.85rem",
                 color: "#fef3c7",
                 fontStyle: "italic",
                 margin: 0,
+                textAlign: "center",
               }}
             >
-              Kekurangan Tim & Solusinya: pengalaman hukum pengadaan pemerintah & pengembangan bisnis → didampingi mentor PIDI dan inkubator teknologi pemerintah
+              <strong>Gap & Mitigasi:</strong> Pengalaman procurement & BD → didampingi mentor PIDI · Detail roadmap di Appendix A2 & A3
             </p>
           </div>
-        </div>
 
-        <div className="cta-section" style={{ marginTop: "3rem" }}>
-          <p className="website">
-            <a
-              href="https://revdadas.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ color: "#fbbf24" }}
-            >
-              revdadas.vercel.app
-            </a>
-          </p>
-          <p className="github">
-            <a
-              href="https://github.com/KwikAndreas/revdadas"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ color: "rgba(255,255,255,0.9)" }}
-            >
-              github.com/KwikAndreas/revdadas
-            </a>
-          </p>
-        </div>
-
-        <div className="team-footer">
-          <p>
-            Kwik Andreas Jonathan · Gwyneth Eunice Widjaja · Clay Micholaz Fu ·
-            Moses Chisthoper Adisam
-          </p>
-          <p>S0175</p>
+          <div style={{ textAlign: "center", marginTop: "1.5rem", paddingTop: "1rem", borderTop: "1px solid rgba(255,255,255,0.1)" }}>
+            <p style={{ fontSize: "0.8rem", color: "rgba(255,255,255,0.6)" }}>
+              Kwik Andreas Jonathan · Gwyneth Eunice Widjaja · Clay Micholaz Fu · Moses Chisthoper Adisam
+            </p>
+            <p style={{ fontSize: "0.875rem", color: "rgba(255,255,255,0.7)", marginTop: "0.35rem" }}>
+              <strong>S0175</strong>
+            </p>
+          </div>
         </div>
       </div>
 
